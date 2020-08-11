@@ -171,21 +171,3 @@ section#clubs.hero.is-warning.is-medium.is-bold
                                 span= club.social[social.name]
                               else if social.name == 'ig' 
                                 span @#{club.social[social.name]}
-
-                //-
-                  nav.level.is-mobile.social
-                    .level-left
-                      each social in social_config
-                        if club.social[social.name]
-                          a.level-item(
-                            href=`${social.prefix || ''}${club.social[social.name]}`
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          )
-                            span.icon(class=social.color)
-                              i.fa-lg(class=social.icon)
-                        else
-                          a.level-item.inactive-link
-                            span.icon.has-text-grey
-                              i.fa-lg(class=social.icon)
-

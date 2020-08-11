@@ -19,4 +19,7 @@ jobs:
         node-version: 14
     - run: npm ci
     - run: npm run build
-    - run: git config --global user.email ${{ secrets.GH_EMAIL }} && git config --global user.name ${{ secrets.GH_USERNAME }} && npm run deploy
+    - run: |
+        git config --global user.email "${{ secrets.GH_EMAIL }}"
+        git config --global user.name "${{ secrets.GH_USERNAME }}"
+        npm run deploy
