@@ -16,7 +16,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Setup Node@14
+    - name: Setup node@14
       uses: actions/setup-node@v1
       with:
         node-version: 14
@@ -33,3 +33,4 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./dist
         publish_branch: master
+        cname: scist.org
