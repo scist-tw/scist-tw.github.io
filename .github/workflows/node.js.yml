@@ -17,6 +17,6 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: 14
-    - run: npm ci && npm i -g pug-cli
+    - run: npm ci
     - run: npm run build
     - run: npm run deploy
