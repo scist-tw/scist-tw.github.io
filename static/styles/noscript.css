@@ -1,0 +1,9 @@
+  [data-aos] {
+    opacity: 1 !important;
+    transform: translate(0) scale(1) !important;
+  }
+
+  #algorithm-image img:nth-child(1),
+  #security-image img:nth-child(1) {
+    display: block !important;
+  }

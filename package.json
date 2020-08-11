@@ -1,0 +1,29 @@
+{
+  "name": "scist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pug -w index.pug",
+    "gulp": "gulp",
+    "build": "pug index.pug && yarn gulp",
+    "deploy": "yarn gulp deploy"
+  },
+  "author": "CSY54",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/plugin-transform-async-to-generator": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.11.0",
+    "@babel/runtime": "^7.11.2",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "merge-stream": "^2.0.0",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {}
+}

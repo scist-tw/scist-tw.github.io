@@ -1,0 +1,64 @@
+-
+  const contacts = [
+    {
+      url: 'https://fb.me/scist.org',
+      icon: 'fab fa-facebook',
+      color: 'is-info',
+      text: 'scist.org',
+    },
+    {
+      url: 'mailto:official@scist.org',
+      icon: 'fas fa-envelope',
+      color: 'is-danger',
+      text: 'official@scist.org'
+    }
+  ]
+
+footer#footer.footer
+  .section.has-text-centered
+    h3.title.is-4
+      | 南臺灣
+      wbr
+      | 高中生
+      wbr
+      | 資訊
+      wbr
+      | 社群
+    h4.subtitle.is-6
+      | Students' Community of Imformation in Southern Taiwan
+  .section.has-text-centered
+    h4.title.is-5 聯絡我們
+    .subtitle.buttons.is-centered.are-small
+      each contact in contacts
+        a.button(
+          href=contact.url
+          target="_blank"
+          rel="noopener noreferrer"
+          class=contact.color
+        )
+          span.icon
+            i(class=contact.icon)
+          span= contact.text
+
+  .section.has-text-centered
+    div
+      | Icons made by 
+      a(
+        href="https://www.flaticon.com/authors/freepik"
+        title="Freepik"
+        target="_blank"
+        rel="noopener noreferrer"
+      )
+        | Freepik
+      |  from 
+      a(
+        href="https://www.flaticon.com/"
+        title="Flaticon"
+        target="_blank"
+        rel="noopener noreferrer"
+      )
+        | www.flaticon.com
+
+  .section.has-text-centered.has-text-weight-bold
+    p Copyright © 2020 SCIST
+    p All Rights Reserved

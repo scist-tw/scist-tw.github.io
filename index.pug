@@ -1,0 +1,20 @@
+doctype html
+html(lang="zh-tw")
+  head
+    include includes/head.pug
+  body
+    include includes/nav.pug
+
+    main
+      include includes/sections/aboutus.pug
+      include includes/sections/courses.pug
+      include includes/sections/clubs.pug
+      include includes/sections/credit.pug
+      include includes/sections/link.pug
+
+    include includes/footer.pug
+
+    script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+    //-
+      script(src="static/scripts/aos.js")
+    script(src="static/scripts/main.js")
