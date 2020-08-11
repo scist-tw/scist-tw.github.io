@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "pug -w index.pug",
     "gulp": "gulp",
-    "build": "pug index.pug && yarn gulp",
-    "deploy": "yarn gulp deploy"
+    "build": "pug index.pug && gulp",
+    "deploy": "gulp deploy"
   },
   "author": "CSY54",
   "license": "ISC",
