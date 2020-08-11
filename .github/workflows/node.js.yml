@@ -17,8 +17,6 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: 14
-    - run: git config --global user.email ${{ secrets.GH_EMAIL }}
-    - run: git config --global user.name ${{ secrets.GH_USERNAME }}
     - run: npm ci
     - run: npm run build
-    - run: npm run deploy
+    - run: git config --global user.email ${{ secrets.GH_EMAIL }} && git config --global user.name ${{ secrets.GH_USERNAME }} && npm run deploy
