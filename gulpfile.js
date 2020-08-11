@@ -84,11 +84,7 @@ gulp.task('misc', () => {
     .src('static/favicon/**')
     .pipe(gulp.dest('dist/static/favicon'))
 
-  const cname = gulp
-    .src('public/**')
-    .pipe(gulp.dest('dist'))
-
-  return merge(svg, favicons, cname)
+  return merge(svg, favicons)
 })
 
 gulp.task('deploy', () => {
