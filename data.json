@@ -195,15 +195,15 @@
       "pics": [
         {
           "name": "國立臺南第一高級中學",
-          "image": "tnfsh"
+          "image": "tnfsh.png"
         },
         {
           "name": "教育部資訊安全人才培育計畫辦公室",
-          "image": "isip"
+          "image": "isip.png"
         },
         {
           "name": "教育部資訊安全人才培育計畫暨臺灣好厲駭",
-          "image": "thh"
+          "image": "thh.png"
         }
       ]
     },
@@ -212,11 +212,11 @@
       "pics": [
         {
           "name": "奧義智慧科技",
-          "image": "cycarrier"
+          "image": "cycarrier.png"
         },
         {
           "name": "財團法人可成教育基金會",
-          "image": "catcher"
+          "image": "catcher.png"
         }
       ]
     }

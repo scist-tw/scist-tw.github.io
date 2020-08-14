@@ -7,7 +7,7 @@ section#credit.hero.is-medium.is-white.is-bold
       each org in coorganizers.pics
         figure.image(data-aos="fade-up")
           img.org(
-            src=`static/images/coorganizers/${org.image}.png`
+            src=`static/images/coorganizers/${org.image}`
             alt=org.name
           )
           figcaption= org.name
@@ -20,7 +20,7 @@ section#credit.hero.is-medium.is-white.is-bold
       each org in sponsors.pics
         figure.image(data-aos="fade-up")
           img.org(
-            src=`static/images/sponsors/${org.image}.png`
+            src=`static/images/sponsors/${org.image}`
             alt=org.name
           )
           figcaption= org.name
