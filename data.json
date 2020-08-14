@@ -25,13 +25,39 @@
     "title": "課程內容",
     "algorithm": {
       "title": "演算法",
-      "pics": [ "algorithm", "object", "code", "idea" ],
-      "list": [ "樹", "STL", "排序", "遞迴", "搜尋", "圖論", "貪心法", "資料結構", "動態規劃" ]
+      "svg": [
+        "algorithm.svg",
+        "object.svg",
+        "code.svg",
+        "idea.svg"
+      ],
+      "list": [
+        "樹",
+        "STL",
+        "排序",
+        "遞迴",
+        "搜尋",
+        "圖論",
+       "貪心法",
+        "資料結構",
+        "動態規劃"
+      ]
     },
     "security": {
       "title": "資訊安全",
-      "pics": [ "encryption", "identity", "cloud", "server" ],
-      "list": [ "PWN", "密碼學", "逆向工程", "網頁安全", "數位鑑識" ]
+      "svg": [
+        "encryption.svg",
+        "identity.svg",
+        "cloud.svg",
+        "server.svg"
+      ],
+      "list": [
+        "PWN",
+        "密碼學",
+        "逆向工程",
+        "網頁安全",
+        "數位鑑識"
+      ]
     }
   },
   "clubs": {
@@ -204,10 +230,6 @@
         {
           "name": "教育部資訊安全人才培育計畫暨臺灣好厲駭",
           "image": "thh.png"
-        },
-        {
-          "name": "教育部智慧創新跨域人才培育計畫",
-          "image": "itsa.png"
         }
       ]
     },
@@ -230,4 +252,3 @@
     "subtitle": "關注我們的 FB 可以獲得更多資訊"
   }
 }
-

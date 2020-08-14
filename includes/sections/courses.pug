@@ -12,14 +12,14 @@ section#courses.hero.is-info.is-medium.is-bold
       .column.is-half
         .section.justify-center
           figure#algorithm-image.image
-            each pic in algorithm.pics
-              img.animation.is-hidden(src=`static/images/courses/${pic}.svg`)
+            each svg in algorithm.svg
+              img.animation.is-hidden(src=`static/images/courses/${svg}`)
     .columns.reverse-column-order.is-vcentered
       .column.is-half
         .section.justify-center
           figure#security-image.image
-            each pic in security.pics
-              img.animation.is-hidden(src=`static/images/courses/${pic}.svg`)
+            each svg in security.svg
+              img.animation.is-hidden(src=`static/images/courses/${svg}`)
       .column.is-half
         .section.box(data-aos="fade-left")
           h3.title.has-text-black.has-text-centered #{security.title}
