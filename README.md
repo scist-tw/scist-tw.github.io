@@ -4,7 +4,7 @@
 
 All data is in `data.json` file, you can modify it manually.
 
-The site will rebuild once you commit the changes.
+The site will rebuild **automatically** once you commit the changes.
 
 **Important**
 
