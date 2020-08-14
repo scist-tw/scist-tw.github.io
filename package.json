@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "pug -w index.pug",
+    "dev": "pug -O data.json -w index.pug",
     "gulp": "gulp",
-    "build": "pug index.pug && gulp",
+    "build": "pug -O data.json index.pug && gulp",
     "deploy": "gulp deploy"
   },
   "author": "CSY54",

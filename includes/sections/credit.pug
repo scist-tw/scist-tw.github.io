@@ -1,24 +1,13 @@
--
-  const coorganizers = [
-    { name: '國立臺南第一高級中學', img: 'tnfsh' },
-    { name: '教育部資訊安全人才培育計畫辦公室', img: 'isip' },
-    { name: '教育部資訊安全人才培育計畫暨臺灣好厲駭', img: 'thh' }
-  ]
-
--
-  const sponsors = [
-    { name: '奧義智慧科技', img: 'cycarrier' },
-    { name: '財團法人可成教育基金會', img: 'catcher' }
-  ]
+- const { coorganizers, sponsors } = credit
 
 section#credit.hero.is-medium.is-white.is-bold
   .hero-body
-    h2.title.has-text-centered 協辦單位
+    h2.title.has-text-centered #{coorganizers.title}
     .container.is-flex.justify-center.has-text-centered
-      each org in coorganizers
+      each org in coorganizers.pics
         figure.image(data-aos="fade-up")
           img.org(
-            src=`static/images/coorganizers/${org.img}.png`
+            src=`static/images/coorganizers/${org.image}.png`
             alt=org.name
           )
           figcaption= org.name
@@ -26,12 +15,12 @@ section#credit.hero.is-medium.is-white.is-bold
   hr.divider
 
   .hero-body
-    h2.title.has-text-centered 贊助單位
+    h2.title.has-text-centered #{sponsors.title}
     .container.is-flex.justify-center.has-text-centered
-      each org in sponsors
+      each org in sponsors.pics
         figure.image(data-aos="fade-up")
           img.org(
-            src=`static/images/sponsors/${org.img}.png`
+            src=`static/images/sponsors/${org.image}.png`
             alt=org.name
           )
           figcaption= org.name

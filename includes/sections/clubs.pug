@@ -1,146 +1,14 @@
--
-  const clubs = {
-    '嘉義': [
-      {
-        school: '嘉義高中',
-        name: '電腦社',
-        abbr: 'CYCC',
-        social: {
-          fb: 'CYCC3.0',
-          ig: 'cysh_cc'
-        },
-        image: 'cycc.jpg'
-      },
-      {
-        school: '嘉義女中',
-        name: '程式研究社',
-        abbr: 'PRC',
-        social: {
-          fb: 'CYGSH.PRC',
-          ig: 'cygsh_irc_7'
-        },
-        image: 'prc.jpg'
-      },
-      {
-        school: '嘉義高工',
-        social: {},
-        image: 'cyivs.jpg'
-      }
-    ],
-    '臺南': [
-      {
-        school: '臺南一中',
-        name: '資訊社',
-        abbr: 'TFcis',
-        social: {
-          site: 'https://tfcis.org/',
-          fb: 'tfcis',
-          ig: 'tfcis_at_tnfsh'
-        },
-        image: 'tfcis.jpg'
-      },
-      {
-        school: '臺南女中',
-        name: '資訊研究社',
-        abbr: 'TGIRC',
-        social: {
-          fb: 'tngsirc',
-          ig: 'tngs_tgirc'
-        },
-        image: 'tgirc.jpg'
-      },
-      {
-        school: '臺南高工',
-        name: '網頁設計社',
-        abbr: 'NTIHSWDC',
-        social: {},
-        image: 'ntihswdc.jpg'
-      },
-      {
-        school: '新化高中',
-        name: '資訊研究社',
-        social: {},
-        image: 'hhsh.jpg'
-      },
-      {
-        school: '興國高中',
-        name: '資訊應用社',
-        social: {
-          fb: 'hkhsirc3rd',
-          ig: 'hkhs_irc_3rd'
-        },
-        image: 'hkhs.jpg'
-      },
-      {
-        school: '家齊高中',
-        name: '資訊研究社',
-        abbr: 'CCIRS',
-        social: {
-          fb: 'CCIRS.since2016',
-          ig: 'ccsh_ccirs'
-        },
-        image: 'ccirs.jpg'
-      }
-    ],
-    '高雄': [
-      {
-        school: '高雄中學',
-        name: '程式設計社',
-        abbr: 'KSPGC',
-        social: {
-          fb: 'KSPGC'
-        },
-        image: 'kspgc.jpg'
-      },
-      {
-        school: '高雄女中',
-        name: '電腦資訊暨網路科技研究社',
-        abbr: 'I2TRC2',
-        social: {
-          site: 'http://kghsi2trc2.mystrikingly.com/',
-          fb: 'KGHSI2TRC2',
-          ig: 'kghs_i2trc2'
-        },
-        image: 'i2trc2.jpg'
-      },
-      {
-        school: '鳳山高中',
-        name: '電腦資訊社',
-        abbr: 'FSCS',
-        social: {
-          fb: 'FSSH.CS',
-          ig: 'fssh.cs.club'
-        },
-        image: 'fscs.jpg'
-      }
-    ]
-  }
-
--
-  const cities_config = [
-    { name: '嘉義', animation: 'fade-right' },
-    { name: '臺南', animation: 'fade-up' },
-    { name: '高雄', animation: 'fade-left' }
-  ]
-
-
--
-  const social_config = [
-    { name: 'site', color: 'is-success', icon: 'fas fa-globe' },
-    { name: 'fb', color: 'is-info', icon: 'fab fa-facebook', prefix: 'https://fb.me/' },
-    { name: 'ig', color: 'is-danger', icon: 'fab fa-instagram-square', prefix: 'https://instagr.am/' }
-  ]
-
+- const { all_clubs, cities_config, social_config } = clubs
 
 section#clubs.hero.is-warning.is-medium.is-bold
   .hero-body
-    h2.title.has-text-centered 參與學校
+    h2.title.has-text-centered #{clubs.title}
     .columns.is-multiline
       each city in cities_config
         .column.is-one-third-desktop
           .box(data-aos=city.animation)
             h3.title.has-text-centered= city.name
-            each club in clubs[city.name]
+            each club in all_clubs[city.abbr]
               .media
                 figure.media-left
                   p.image.is-64x64
@@ -152,7 +20,6 @@ section#clubs.hero.is-warning.is-medium.is-bold
                       br
                       | #{club.abbr}
                       br
-                  
                     nav.is-mobile
                       .buttons.are-small
                         each social in social_config
@@ -169,5 +36,5 @@ section#clubs.hero.is-warning.is-medium.is-bold
                                 span 官網
                               else if social.name == 'fb'
                                 span= club.social[social.name]
-                              else if social.name == 'ig' 
+                              else if social.name == 'ig'
                                 span @#{club.social[social.name]}

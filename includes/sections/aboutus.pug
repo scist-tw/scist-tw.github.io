@@ -2,21 +2,13 @@ section#aboutus.floating-card.hero.section.is-relative.is-white.box.is-medium(da
   .columns.is-centered
     .column.is-three-quarters-desktop
       .container
-        h2.title.has-text-centered 關於我們
-        p.content
-          | SCIST 是一群來自嘉義、台南、高雄三地的高中學生，經過許多活動以及比賽後深深感受到南北資訊能力以及資源的落差，我們希望透過 SCIST 舉辦的課程、研討會帶動南部學生的資訊能力水平，同時也帶來更多資源提供所有人進行學習！
-        - 
-          const items = [
-            { heading: '南臺灣', icon: 'fa-compass' },
-            { heading: '高中生', icon: 'fa-school' },  
-            { heading: '資訊', icon: 'fa-code' },  
-            { heading: '社群', icon: 'fa-users' },  
-          ]
+        h2.title.has-text-centered #{aboutus.title}
+        p.content #{aboutus.description}
         .columns.is-multiline.is-mobile.intro-icon
-          each item in items
+          each item in aboutus.items
             .column.is-half-mobile
               .container.has-text-centered
-                p.heading #{item.heading}
+                p.heading #{item.title}
                 p.title
                   span.icon
                     i.fas(class=item.icon)

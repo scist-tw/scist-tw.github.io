@@ -1,67 +1,27 @@
+- const { algorithm, security } = courses
+
 section#courses.hero.is-info.is-medium.is-bold
   .hero-body
-    h2.title.has-text-centered 課程內容
+    h2.title.has-text-centered #{courses.title}
     .columns.is-vcentered
       .column.is-half
         .section.box(data-aos="fade-right")
-          h3.title.has-text-black.has-text-centered 演算法
+          h3.title.has-text-black.has-text-centered #{algorithm.title} 
           .content
-            | 我們將會從基礎 C++ 語法開始帶起，慢慢進入到演算法的世界。
-            br
-            | 其中包括：
-            ul.two-columns
-              - var algorithm = ['樹', 'STL', '排序', '遞迴', '搜尋', '圖論', '貪心法', '資料結構', '動態規劃']
-              each data in algorithm
-                li= data
-            | 透過一天 8 小時的充足課程以及隔周的練習時間，目標是在課程結束後能在 
-            a(
-              href="https://apcs.csie.ntnu.edu.tw/"
-              target="_blank"
-              rel="noopener noreferrer"
-            ) APCS
-            |  檢定上獲得觀念至少 4 級分、實作至少 3 級分，我們也推薦學員參與 
-            a(
-              href="https://contest.cc.ntu.edu.tw"
-              target="_blank"
-              rel="noopener noreferrer"
-            ) NPSC
-            | ，並將目標設定為進入決賽。
-            //- .content ul:not(last-child) has padding
-            br
+            include ../../templates/algorithm.pug
       .column.is-half
         .section.justify-center
-          - var pics = ['algorithm', 'object', 'code', 'idea']
           figure#algorithm-image.image
-            each pic in pics
+            each pic in algorithm.pics
               img.animation.is-hidden(src=`static/images/courses/${pic}.svg`)
     .columns.reverse-column-order.is-vcentered
       .column.is-half
         .section.justify-center
-          - var pics = ['encryption', 'identity', 'cloud', 'server']
           figure#security-image.image
-            each pic in pics
+            each pic in security.pics
               img.animation.is-hidden(src=`static/images/courses/${pic}.svg`)
       .column.is-half
         .section.box(data-aos="fade-left")
-          h3.title.has-text-black.has-text-centered 資訊安全
+          h3.title.has-text-black.has-text-centered #{security.title}
           .content
-            | SCIST 的資訊安全課程包含五大經典主題：
-            - var security = ['PWN', '密碼學', '逆向工程', '網頁安全', '數位鑑識']
-            ul.two-columns
-              each data in security
-                li= data
-            | 期望在為期一年的課程中培養學員基本的資安技術能力，鼓勵學員積極參與 
-            a(
-              href="https://ais3.org/mfctf/"
-              target="_blank"
-              rel="noopener noreferrer"
-            ) MyFirstCTF
-            |  爭取名次，並以錄取 
-            a(
-              href="https://ais3.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            ) AIS3
-            |  為目標。
-            br
-            | SCIST 將於 MyFirstCTF 前一週舉辦資安競賽，讓學員實際體驗賽中競速的刺激感和解題的樂趣，並檢驗學習成果。
+            include ../../templates/security.pug

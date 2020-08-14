@@ -1,0 +1,229 @@
+{
+  "aboutus": {
+    "title": "關於我們",
+    "description": "SCIST 是一群來自嘉義、台南、高雄三地的高中學生，經過許多活動以及比賽後深深感受到南北資訊能力以及資源的落差，我們希望透過 SCIST 舉辦的課程、研討會帶動南部學生的資訊能力水平，同時也帶來更多資源提供所有人進行學習！",
+    "items": [
+      {
+        "title": "南臺灣",
+        "icon": "fa-compass"
+      },
+      {
+        "title": "高中",
+        "icon": "fa-school"
+      },
+      {
+        "title": "資訊",
+        "icon": "fa-code"
+      },
+      {
+        "title": "社群",
+        "icon": "fa-users"
+      }
+    ]
+  },
+  "courses": {
+    "title": "課程內容",
+    "algorithm": {
+      "title": "演算法",
+      "pics": [ "algorithm", "object", "code", "idea" ],
+      "list": [ "樹", "STL", "排序", "遞迴", "搜尋", "圖論", "貪心法", "資料結構", "動態規劃" ]
+    },
+    "security": {
+      "title": "資訊安全",
+      "pics": [ "encryption", "identity", "cloud", "server" ],
+      "list": [ "PWN", "密碼學", "逆向工程", "網頁安全", "數位鑑識" ]
+    }
+  },
+  "clubs": {
+    "title": "參與學校",
+    "all_clubs": {
+      "CY": [
+        {
+          "school": "嘉義高中",
+          "name": "電腦社",
+          "abbr": "CYCC",
+          "social": {
+            "fb": "CYCC3.0",
+            "ig": "cysh_cc"
+          },
+          "image": "cycc.jpg"
+        },
+        {
+          "school": "嘉義女中",
+          "name": "程式研究社",
+          "abbr": "PRC",
+          "social": {
+            "fb": "CYGSH.PRC",
+            "ig": "cygsh_irc_7"
+          },
+          "image": "prc.jpg"
+        },
+        {
+          "school": "嘉義高工",
+          "social": {},
+          "image": "cyivs.jpg"
+        }
+      ],
+      "TN": [
+        {
+          "school": "臺南一中",
+          "name": "資訊社",
+          "abbr": "TFcis",
+          "social": {
+            "site": "https://tfcis.org/",
+            "fb": "tfcis",
+            "ig": "tfcis_at_tnfsh"
+          },
+          "image": "tfcis.jpg"
+        },
+        {
+          "school": "臺南女中",
+          "name": "資訊研究社",
+          "abbr": "TGIRC",
+          "social": {
+            "fb": "tngsirc",
+            "ig": "tngs_tgirc"
+          },
+          "image": "tgirc.jpg"
+        },
+        {
+          "school": "臺南高工",
+          "name": "網頁設計社",
+          "abbr": "NTIHSWDC",
+          "social": {},
+          "image": "ntihswdc.jpg"
+        },
+        {
+          "school": "新化高中",
+          "name": "資訊研究社",
+          "social": {},
+          "image": "hhsh.jpg"
+        },
+        {
+          "school": "興國高中",
+          "name": "資訊應用社",
+          "social": {
+            "fb": "hkhsirc3rd",
+            "ig": "hkhs_irc_3rd"
+          },
+          "image": "hkhs.jpg"
+        },
+        {
+          "school": "家齊高中",
+          "name": "資訊研究社",
+          "abbr": "CCIRS",
+          "social": {
+            "fb": "CCIRS.since2016",
+            "ig": "ccsh_ccirs"
+          },
+          "image": "ccirs.jpg"
+        }
+      ],
+      "KH": [
+        {
+          "school": "高雄中學",
+          "name": "程式設計社",
+          "abbr": "KSPGC",
+          "social": {
+            "fb": "KSPGC"
+          },
+          "image": "kspgc.jpg"
+        },
+        {
+          "school": "高雄女中",
+          "name": "電腦資訊暨網路科技研究社",
+          "abbr": "I2TRC2",
+          "social": {
+            "site": "http://kghsi2trc2.mystrikingly.com/",
+            "fb": "KGHSI2TRC2",
+            "ig": "kghs_i2trc2"
+          },
+          "image": "i2trc2.jpg"
+        },
+        {
+          "school": "鳳山高中",
+          "name": "電腦資訊社",
+          "abbr": "FSCS",
+          "social": {
+            "fb": "FSSH.CS",
+            "ig": "fssh.cs.club"
+          },
+          "image": "fscs.jpg"
+        }
+      ]
+    },
+    "cities_config": [
+      {
+        "abbr": "CY",
+        "name": "嘉義",
+        "animation": "fade-right"
+      },
+      {
+        "abbr": "TN",
+        "name": "臺南",
+        "animation": "fade-up"
+      },
+      {
+        "abbr": "KH",
+        "name": "高雄",
+        "animation": "fade-left"
+      }
+    ],
+    "social_config": [
+      {
+        "name": "site",
+        "color": "is-success",
+        "icon": "fas fa-globe"
+      },
+      {
+        "name": "fb",
+        "color": "is-info",
+        "icon": "fab fa-facebook",
+        "prefix": "https://fb.me/"
+      },
+      {
+        "name": "ig",
+        "color": "is-danger",
+        "icon": "fab fa-instagram-square",
+        "prefix": "https://instagr.am/"
+      }
+    ]
+  },
+  "credit": {
+    "coorganizers": {
+      "title": "協辦單位",
+      "pics": [
+        {
+          "name": "國立臺南第一高級中學",
+          "image": "tnfsh"
+        },
+        {
+          "name": "教育部資訊安全人才培育計畫辦公室",
+          "image": "isip"
+        },
+        {
+          "name": "教育部資訊安全人才培育計畫暨臺灣好厲駭",
+          "image": "thh"
+        }
+      ]
+    },
+    "sponsors": {
+      "title": "贊助單位",
+      "pics": [
+        {
+          "name": "奧義智慧科技",
+          "image": "cycarrier"
+        },
+        {
+          "name": "財團法人可成教育基金會",
+          "image": "catcher"
+        }
+      ]
+    }
+  },
+  "link": {
+    "title": "對 SCIST 感興趣嗎？",
+    "subtitle": "關注我們的 FB 可以獲得更多資訊"
+  }
+}
+
