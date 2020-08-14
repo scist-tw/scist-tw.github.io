@@ -168,3 +168,7 @@ ul {
   animation: pulse 1s cubic-bezier(.55,.09,.68,.53) infinite;
   z-index: -1;
 }
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
