@@ -1,5 +1,5 @@
 title SCIST | 南臺灣高中生資訊社群 Students' Community of Information in Southern Taiwan
-meta(charset="utf-8")
+meta(charset="UTF-8")
 meta(name="viewport" content="width=device-width, initial-scale=1")
 meta(name="author" content="CSY54")
 meta(name="description" content="SCIST | 南臺灣高中生資訊社群 Students' Community of Information in Southern Taiwan")
@@ -20,8 +20,13 @@ link(rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?fa
 link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css")
 link(rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css")
 link(rel="stylesheet" type="text/css" href="static/styles/main.css")
+script(defer src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+script(defer src="static/scripts/main.js")
 script(async src="https://www.googletagmanager.com/gtag/js?id=UA-166051932-1")
 script.
- function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-166051932-1");
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-166051932-1');
 noscript
   style(rel="stylesheet" type="text/css" href="static/styles/noscript.css")

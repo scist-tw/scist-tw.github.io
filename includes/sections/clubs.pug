@@ -12,11 +12,14 @@ section#clubs.hero.is-warning.is-medium.is-bold
               .media
                 figure.media-left
                   p.image.is-64x64
-                    img(src=`static/images/clubs/${club.image}`)
+                    img(
+                      src=`static/images/clubs/${club.image}`
+                      alt=club.school
+                    )
                 .media-content
                   .content
                     p
-                      | #{`${club.school}${club.name ? '\u00a0\u2223\u00a0' + club.name : ''}`}
+                      | #{`${club.school}${club.name ? '｜' + club.name : ''}`}
                       br
                       | #{club.abbr}
                       br
@@ -25,16 +28,16 @@ section#clubs.hero.is-warning.is-medium.is-bold
                         each social in social_config
                           if club.social[social.name]
                             a.button.is-light(
-                              href=`${social.prefix || ''}${club.social[social.name]}`
+                              href=`${social.prefix || ''}${social.name === 'fb' ? club.social[social.name][0] : club.social[social.name]}`
                               target="_blank"
                               rel="noopener noreferrer"
                               class=social.color
                             )
                               span.icon
                                 i.fa-lg(class=social.icon)
-                              if social.name == 'site'
+                              if social.name === 'site'
                                 span 官網
-                              else if social.name == 'fb'
-                                span= club.social[social.name]
-                              else if social.name == 'ig'
+                              else if social.name === 'fb'
+                                span= club.social[social.name][1]
+                              else if social.name === 'ig'
                                 span @#{club.social[social.name]}

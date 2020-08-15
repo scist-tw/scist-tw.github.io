@@ -53,14 +53,23 @@ gulp.task('js', () => {
 gulp.task('img', () => {
   const cfg = {
     png: [ '.', 'clubs', 'coorganizers', 'courses', 'sponsors' ],
-    jpg: [ 'clubs' ]
+    jpg: [ 'clubs' ],
+    svg: [ 'courses' ]
   }
 
   const tasks = Object.entries(cfg).map(([ext, path]) => {
     return path.map((name) => {
       return gulp
         .src(`static/images/${name}/*.${ext}`)
-        .pipe(imagemin())
+        .pipe(imagemin([
+          imagemin.optipng(),
+          imagemin.svgo(),
+          imagemin.mozjpeg({
+            quality: 85
+          })
+        ]), {
+          silent: true
+        })
         .pipe(gulp.dest(`dist/static/images/${name}`))
     })
   })
@@ -69,22 +78,11 @@ gulp.task('img', () => {
 })
 
 gulp.task('misc', () => {
-  // .svg
-  const path = [ 'courses' ]
-
-  const svg = path.map((name) => {
-    return path.map((name) => {
-      return gulp
-        .src(`static/images/${name}/*.svg`)
-        .pipe(gulp.dest(`dist/static/images/${name}`))
-    })
-  })
-
   const favicons = gulp
     .src('static/favicon/**')
     .pipe(gulp.dest('dist/static/favicon'))
 
-  return merge(svg, favicons)
+  return merge(favicons)
 })
 
 gulp.task('deploy', () => {
