@@ -1,11 +1,10 @@
 const gulp = require('gulp')
 const htmlmin = require('gulp-htmlmin')
 const cleanCSS = require('gulp-clean-css')
-const babel = require('gulp-babel')
+const terser = require('gulp-terser')
 const imagemin = require('gulp-imagemin')
 const imageResize = require('gulp-image-resize')
 const ghPages = require('gulp-gh-pages')
-const webpack = require('webpack-stream')
 const merge = require('merge-stream')
 
 const deployOptions = {
@@ -33,21 +32,7 @@ gulp.task('css', () => {
 gulp.task('js', () => {
   return gulp
     .src('static/scripts/*.js')
-    .pipe(babel({
-      presets: [
-        '@babel/preset-env'
-      ],
-      plugins: [
-        '@babel/plugin-transform-async-to-generator',
-        '@babel/plugin-transform-runtime',
-      ]
-    }))
-    .pipe(webpack({
-      mode: 'production',
-      output: {
-        filename: 'main.js'
-      }
-    }))
+    .pipe(terser())
     .pipe(gulp.dest('./dist/static/scripts'))
 })
 
