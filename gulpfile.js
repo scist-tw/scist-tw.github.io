@@ -3,6 +3,7 @@ const htmlmin = require('gulp-htmlmin')
 const cleanCSS = require('gulp-clean-css')
 const babel = require('gulp-babel')
 const imagemin = require('gulp-imagemin')
+const imageResize = require('gulp-image-resize')
 const ghPages = require('gulp-gh-pages')
 const webpack = require('webpack-stream')
 const merge = require('merge-stream')
@@ -52,12 +53,11 @@ gulp.task('js', () => {
 
 gulp.task('img', () => {
   const cfg = {
-    png: [ '.', 'clubs', 'coorganizers', 'courses', 'sponsors' ],
-    jpg: [ 'clubs' ],
+    png: [ '.', 'coorganizers', 'courses', 'sponsors' ],
     svg: [ 'courses' ]
   }
 
-  const tasks = Object.entries(cfg).map(([ext, path]) => {
+  const images = Object.entries(cfg).map(([ext, path]) => {
     return path.map((name) => {
       return gulp
         .src(`static/images/${name}/*.${ext}`)
@@ -74,7 +74,22 @@ gulp.task('img', () => {
     })
   })
 
-  return merge(tasks)
+  const jpg = gulp
+    .src('static/images/clubs/*.jpg')
+    .pipe(imageResize({
+      width: 64,
+      height: 64
+    }))
+    .pipe(imagemin([
+      imagemin.mozjpeg({
+        quality: 85
+      })
+    ]), {
+      silent: true
+    })
+    .pipe(gulp.dest('dist/static/images'))
+
+  return merge(images, jpg)
 })
 
 gulp.task('misc', () => {
