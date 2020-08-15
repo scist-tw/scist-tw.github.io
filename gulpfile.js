@@ -87,7 +87,7 @@ gulp.task('img', () => {
     ]), {
       silent: true
     })
-    .pipe(gulp.dest('dist/static/images'))
+    .pipe(gulp.dest('dist/static/images/clubs'))
 
   return merge(images, jpg)
 })
