@@ -113,8 +113,12 @@
                     "school": "臺南高工",
                     "name": "網頁設計社",
                     "abbr": "NTIHSWDC",
-                    "social": {},
-                    "image": "ntihswdc.jpg"
+                    "social": {
+                        "site": "https://ntihs-it.github.io/",
+                        "fb": ["NTIHSweb", "台南高工網頁設計社"],
+                        "ig": "ntihs.web"
+                    },
+                    "image": "ntihswdc.png"
                 },
                 {
                     "school": "新化高中",
