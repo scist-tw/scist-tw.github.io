@@ -242,6 +242,22 @@
                 {
                     "name": "財團法人可成教育基金會",
                     "image": "catcher.png"
+                },
+                {
+                    "name": "DEVCORE 戴夫寇爾",
+                    "image": "devcore.png"
+                },
+                {
+                    "name": "教育部智慧創新跨域人才培育計畫",
+                    "image": "ITSA.png"
+                },
+                {
+                    "name": "AIS3 Club",
+                    "image": "AIS3_CLUB_logo.png"
+                },
+                {
+                    "name": "如梭世代",
+                    "image": "zuso.png"
                 }
             ]
         }
