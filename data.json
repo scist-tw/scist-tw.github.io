@@ -272,8 +272,14 @@
             {
                 "url": "mailto:official@scist.org",
                 "icon": "fas fa-envelope",
-                "color": "is-danger",
+                "color": "is-success",
                 "text": "official@scist.org"
+            },
+            {
+                "url": "https://www.instagram.com/scist.tw/",
+                "icon": "fab fa-instagram",
+                "color": "is-danger",
+                "text": "@scist.tw"
             }
         ]
     }
