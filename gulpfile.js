@@ -38,6 +38,7 @@ gulp.task('js', () => {
 
 gulp.task('img', () => {
   const cfg = {
+    jpg: [ '.' ],
     png: [ '.', 'coorganizers', 'courses', 'sponsors' ],
     svg: [ 'courses' ]
   }
