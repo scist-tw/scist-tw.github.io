@@ -74,6 +74,38 @@ ul {
   justify-content: center;
 }
 
+.cover-image {
+  background-image: url("../images/hero.jpg");
+  background-color: #cccccc;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cover-image::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0,0,0,0.25);
+  backdrop-filter: blur(5px);
+}
+
+.hero.cover-image .title {
+  color: #fff;
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7))
+}
+
+.hero.cover-image .subtitle {
+  color: rgba(255,255,255,.9);
+  -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7))
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
