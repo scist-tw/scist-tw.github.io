@@ -44,4 +44,7 @@
   securityAnimation()
 
   AOS.init()
+
+  const year = new Date().getFullYear()
+  document.getElementById('copyright').textContent = year
 })()
