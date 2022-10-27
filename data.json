@@ -231,17 +231,26 @@
         },
         "sponsors": {
             "title": "贊助單位",
-            "pics": [{
+            "pics": [
+                {
                     "name": "奧義智慧科技",
                     "image": "cycraft.png"
                 },
                 {
-                    "name": "財團法人可成教育基金會",
-                    "image": "catcher.png"
-                },
-                {
                     "name": "DEVCORE 戴夫寇爾",
                     "image": "devcore.png"
+                },
+                {
+                    "name": "YTP 少年圖靈計畫",
+                    "image": "ytp.png"
+                },
+                {
+                    "name": "TeamT5 杜浦數位安全",
+                    "image": "teamt5.png"
+                },
+                {
+                    "name": "HackMD",
+                    "image": "hackmd.png"
                 },
                 {
                     "name": "教育部智慧創新跨域人才培育計畫",
@@ -250,10 +259,6 @@
                 {
                     "name": "AIS3 Club",
                     "image": "AIS3_CLUB_logo.png"
-                },
-                {
-                    "name": "如梭世代",
-                    "image": "zuso.png"
                 }
             ]
         }
