@@ -259,6 +259,10 @@
                 {
                     "name": "AIS3 Club",
                     "image": "AIS3_CLUB_logo.png"
+                },
+                {
+                    "name": "Cloud Native Taiwan User Group",
+                    "image": "CNTUG.png"
                 }
             ]
         }
