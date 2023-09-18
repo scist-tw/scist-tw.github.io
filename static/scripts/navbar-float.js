@@ -1,0 +1,1 @@
+const navToggler=document.getElementById("navbar-float-toggler"),navbarLinkList=document.getElementById("navbar-float-linklist");navToggler.addEventListener("click",(()=>{console.log("right"),navbarLinkList.classList.toggle("navbar-float-linklist-active")}));
