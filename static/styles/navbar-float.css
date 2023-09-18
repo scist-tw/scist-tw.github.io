@@ -1,0 +1,121 @@
+#navbar-float-border {
+  position: fixed;
+  top: 33px;
+  left: 150px;
+  right: 150px;
+  z-index: 10;
+  height: 57px;
+  border: none;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(to bottom right, #2916FF80, #00B6DE80);
+  box-shadow: 0px 5px 15px 2px rgba(83, 137, 240, 0.25);
+}
+
+#navbar-float {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 19px;
+  background-color: #F1F1F1;
+  padding: 14px 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navbar-float>a {
+  display: flex;
+  align-items: center;
+} 
+
+#navbar-float>a>img {
+  width: 100px;
+  height: auto;
+}
+
+#navbar-float-linklist {
+  display: flex;
+  gap: 20px;
+}
+
+#navbar-float-linklist li {
+  list-style-type: none;
+}
+
+#navbar-float-linklist a {
+  font-size: 15px;
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+#navbar-float-linklist a:hover {
+  text-decoration: underline;
+}
+
+#navbar-float-toggler {
+  display: none;
+  width: 40px;
+  height: 40px;
+  padding: 1px;
+  border-radius: 6px;
+  background-color: #00000033;
+  box-shadow: 0 0 5px 2px #00000033;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar-float-toggler:hover {
+  background-color: #00000022;
+  box-shadow: 0 0 5px 2px #00000022;
+}
+
+@media (max-width: 1024px) {
+  #navbar-float-border {
+    left: 100px;
+    right: 100px;
+  }
+}
+
+@media (max-width: 810px) {
+  #navbar-float-border {
+    left: 50px;
+    right: 50px;
+  }
+}
+
+@media(max-width: 720px) {
+  #navbar-float-linklist {
+    position: absolute;
+    top: 69px;
+    right: 0;
+    width: 152px;
+    border-radius: 20px;
+    padding: 16px 24px;
+
+    flex-direction: column;
+
+    background-color: #f1f1f1d9;
+    box-shadow: 0px 0px 5px 2px #f1f1f1d9;
+    backdrop-filter: blur(2px);
+    overflow: hidden;
+
+    clip-path: inset(0px 0px 100% 100%);
+    opacity: 0px;
+    transition: clip-path 0.3s ease-out, opacity 0.3s ease-out;
+  }
+
+
+  #navbar-float-linklist.navbar-float-linklist-active {
+    opacity: 1;
+    clip-path: inset(-5px);
+  }
+
+
+  #navbar-float-toggler {
+    display: flex;
+  }
+}

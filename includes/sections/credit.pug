@@ -1,27 +1,97 @@
 - const { coorganizers, sponsors } = credit
 
-section#credit.hero.is-white.is-medium.is-bold
-  .hero-body
-    h2.title.has-text-centered #{coorganizers.title}
-    .container.is-flex.justify-center.has-text-centered
-      each org in coorganizers.pics
-        figure.image(data-aos="fade-up")
-          img.org(
-            src=`static/images/coorganizers/${org.image}`
-            alt=org.name
-          )
-          figcaption= org.name
+section#credit.is-medium.is-bold
+  if coorganizers.organizes.length > 0
+    .credit-body
+      h2.title.has-text-centered #{ coorganizers.title }
+      .container.is-flex.justify-center.has-text-centered
+        each org in coorganizers.organizes 
+          .organize-border
+            .organize-body
+              h3= org.name 
+              figure.image(data-aos="fade-up")
+                img.org(
+                  src=`static/images/coorganizers/${org.image}`
+                  alt=org.name
+                )
 
-  hr.divider
+  if sponsors.diamand.organizes.length > 0
+    .credit-body.diamand
+      h2.title.has-text-centered #{ sponsors.diamand.title }
+      .container.is-flex.justify-center.has-text-centered
+        each org in sponsors.diamand.organizes 
+          .organize-border
+            .organize-body
+              .organize-container
+                h3= org.name 
+                figure.image(data-aos="fade-up")
+                  img.org(
+                    src=`static/images/sponsors/${org.image}`
+                    alt=org.name
+                  )
+                p
+                  each intro in org.introList 
+                    | #{ intro }
+                    br
+                .mask-container
+                  .mask 
+                  a.see-more(id=`${ org.id }-see-more-link`) see more 
 
-  .hero-body
-    h2.title.has-text-centered #{sponsors.title}
-    .container.is-flex.justify-center.has-text-centered
-      each org in sponsors.pics
-        figure.image(data-aos="fade-up")
-          img.org(
-            src=`static/images/sponsors/${org.image}`
-            alt=org.name
-          )
-          figcaption= org.name
+    each org in sponsors.diamand.organizes
+      .diamand-popup-container(id=`${ org.id }-popup-container`)
+        .diamand-popup-border 
+          .diamand-popup-body
+            .intro-container
+              h2= org.name
+              p
+                each intro in org.introList 
+                  | #{ intro }
+                  br
+            figure.image(data-aos="fade-up")
+              img.org(
+                src=`static/images/sponsors/${org.image}`
+                alt=org.name
+              )
+
+  if sponsors.plantium.organizes.length > 0
+    .credit-body
+      h2.title.has-text-centered #{ sponsors.plantium.title }
+      .container.is-flex.justify-center.has-text-centered
+        each org in sponsors.plantium.organizes 
+          .organize-border
+            .organize-body
+              h3= org.name 
+              figure.image(data-aos="fade-up")
+                img.org(
+                  src=`static/images/sponsors/${org.image}`
+                  alt=org.name
+                )
+
+  if sponsors.gold.organizes.length > 0
+    .credit-body
+      h2.title.has-text-centered #{ sponsors.gold.title }
+      .container.is-flex.justify-center.has-text-centered
+        each org in sponsors.gold.organizes 
+          .organize-border
+            .organize-body
+              h3= org.name 
+              figure.image(data-aos="fade-up")
+                img.org(
+                  src=`static/images/sponsors/${org.image}`
+                  alt=org.name
+                )
+
+  if sponsors.specialThanks.organizes.length > 0
+    .credit-body
+      h2.title.has-text-centered #{ sponsors.specialThanks.title }
+      .container.is-flex.justify-center.has-text-centered
+        each org in sponsors.specialThanks.organizes 
+          .organize-border
+            .organize-body
+              h3= org.name 
+              figure.image(data-aos="fade-up")
+                img.org(
+                  src=`static/images/sponsors/${org.image}`
+                  alt=org.name
+                )
 
