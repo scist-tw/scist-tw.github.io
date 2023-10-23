@@ -198,14 +198,10 @@
                 {
                     "name": "國立臺南第一高級中學",
                     "image": "tnfsh.png"
-                },
+                }, 
                 {
-                    "name": "臺灣好厲駭",
-                    "image": "thh.png"
-                },
-                {
-                    "name": "ITSA",
-                    "image": "itsa.png"
+                    "name": "國立成功大學計算機與網路中心", 
+                    "image": "ncku.png"
                 }
             ]
         },
