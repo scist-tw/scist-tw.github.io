@@ -22,7 +22,7 @@ jobs:
         node-version: 14
 
     - name: Install dependencies for gulp-image-resize
-      run: sudo apt install imagemagick graphicsmagick
+      run: sudo apt update && sudo apt install imagemagick graphicsmagick
 
     - name: Install package dependencies
       run: npm ci
