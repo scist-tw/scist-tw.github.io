@@ -243,12 +243,7 @@
             }, 
             "plantium": {
                 "title": "白金級贊助商", 
-                "organizes": [
-                    {
-                        "name": "TeamT5 杜浦數位安全", 
-                        "image": "teamt5.png"
-                    }
-                ]
+                "organizes": []
             }, 
             "gold" : {
                 "title": "黃金級贊助商", 
