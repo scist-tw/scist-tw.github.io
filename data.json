@@ -79,6 +79,12 @@
                     "name": "資訊社",
                     "social": {},
                     "image": "frc_8584.jpg"
+                },
+                {
+                    "school": "永慶高中",
+                    "name": "資訊社",
+                    "social": {},
+                    "image": ""
                 }
             ],
             "TN": [{
@@ -92,12 +98,6 @@
                     "name": "資訊研究社",
                     "social": {},
                     "image": "tgirc.jpg"
-                },
-                {
-                    "school": "新化高中",
-                    "name": "資訊研究社",
-                    "social": {},
-                    "image": "hhsh.jpg"
                 },
                 {
                     "school": "興國高中",
@@ -122,6 +122,12 @@
                     "name": "程式設計研究社",
                     "social": {},
                     "image": "lmcps.jpg"
+                },
+                {
+                    "school": "成大南工",
+                    "name": "資訊社",
+                    "social": {},
+                    "image": ""
                 }
             ],
             "KHPT": [{
@@ -143,10 +149,16 @@
                     "image": "fscs.jpg"
                 }, 
                 {
-                    "school": "中山高中",
-                    "name": "資訊研究社",
+                    "school": "鳳新高中",
+                    "name": "資訊社",
                     "social": {},
-                    "image": "csic.jpg"
+                    "image": ""
+                },
+                {
+                    "school": "新莊高中",
+                    "name": "資訊社",
+                    "social": {},
+                    "image": ""
                 }, 
                 {
                     "school": "屏東高中",
