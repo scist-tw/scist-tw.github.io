@@ -144,12 +144,8 @@
                 },
                 {
                     "school": "鳳山高中",
-                    "abbr" : "FSCS",
                     "name": "電腦資訊社",
-                    "social": {
-                        "fb": ["FSSH.CS", "鳳山高中電腦資訊社 FSCS"],
-                        "ig": "fssh.cs.club"
-                    },
+                    "social": {},
                     "image": "fscs.jpg"
                 }, 
                 {
