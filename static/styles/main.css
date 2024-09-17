@@ -294,6 +294,19 @@ ul {
   max-width: 100%;
 }
 
+.calendar-prev,
+.calendar-next {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.calendar-current-date {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 @keyframes pulse {
   0% {
     opacity: 1;
