@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const calendarDays = calendarGrid.querySelectorAll('.calendar-grid-day');
 
         calendarDays.forEach((day, index) => {
-            day.textContent = '';
+            day.innerHTML = '';
             day.classList.remove('has-event', 'is-today', 'is-empty');
 
             const dayOfMonth = index - firstDayOfWeek + 1;
@@ -28,8 +28,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 day.textContent = dayOfMonth;
                 day.dataset.date = dayOfMonth;
 
-                if (hasEvent(year, month + 1, dayOfMonth)) {
+                const events = getEvents(year, month + 1, dayOfMonth);
+                if (events.length > 0) {
                     day.classList.add('has-event');
+                    events.forEach(event => {
+                        const eventElement = document.createElement('div');
+                        eventElement.classList.add('calendar-event');
+                        eventElement.textContent = event.name;
+                        day.appendChild(eventElement);
+                    });
                 }
 
                 if (isToday(year, month, dayOfMonth)) {
@@ -39,6 +46,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 day.classList.add('is-empty');
             }
         });
+    }
+
+    function getEvents(year, month, day) {
+        return calendar.events.filter(event => 
+            event.date.year === year &&
+            event.date.month === month &&
+            event.date.day === day
+        );
     }
 
     function hasEvent(year, month, day) {
@@ -64,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     calendarNext.addEventListener('click', function () {
-    currentDate.setMonth(currentDate.getMonth() + 1);
+        currentDate.setMonth(currentDate.getMonth() + 1);
         renderCalendar();
     });
 
