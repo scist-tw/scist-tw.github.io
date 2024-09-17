@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 day.textContent = dayOfMonth;
                 day.dataset.date = dayOfMonth;
 
-                if (hasEvent(year, month, dayOfMonth)) {
+                if (hasEvent(year, month + 1, dayOfMonth)) {
                     day.classList.add('has-event');
                 }
 
@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function hasEvent(year, month, day) {
         return calendar.events.some(event => 
-        event.date.year === year &&
-        event.date.month === month + 1 &&
-        event.date.day === day
+            event.date.year === year &&
+            event.date.month === month &&
+            event.date.day === day
         );
     }
 
