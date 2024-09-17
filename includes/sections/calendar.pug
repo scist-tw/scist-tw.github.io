@@ -1,0 +1,15 @@
+section#calendar.section
+    .container
+        h2.title.has-text-centered #{calendar.title}
+        .calendar-container
+            each event in calendar.events
+                .calendar-event
+                    .calendar-event-date
+                        .calendar-event-month= event.date.toLocaleString('zh-TW', { month: 'short' })
+                        .calendar-event-day= event.date.getDate()
+                    .calendar-event-details
+                        h4.calendar-event-name= event.name
+                        p.calendar-event-location
+                            i.fas.fa-map-marker-alt
+                            span= event.location
+                        a.button.is-link(href=event.url target="_blank") 活動網站

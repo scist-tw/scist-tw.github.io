@@ -226,3 +226,51 @@ ul {
   flex-direction: column;
   justify-content: space-between; 
 }
+
+.calendar-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.calendar-event {
+  display: flex;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.calendar-event-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  background-color: #4285f4;
+  color: white;
+}
+
+.calendar-event-month {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.calendar-event-day {
+  font-size: 2rem;
+}
+
+.calendar-event-details {
+  padding: 1rem;
+}
+
+.calendar-event-name {
+  margin-bottom: 0.5rem;
+}
+
+.calendar-event-location {
+  margin-bottom: 1rem;
+}
+
+.calendar-event-location i {
+  margin-right: 0.5rem;
+}
