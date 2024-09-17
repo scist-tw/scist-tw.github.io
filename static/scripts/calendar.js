@@ -25,8 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const dayOfMonth = index - firstDayOfWeek + 1;
             if (dayOfMonth > 0 && dayOfMonth <= daysInMonth) {
-                day.textContent = dayOfMonth;
-                day.dataset.date = dayOfMonth;
+                const dayNumber = document.createElement('div');
+                dayNumber.classList.add('calendar-grid-day-number');
+                dayNumber.textContent = dayOfMonth;
+                day.appendChild(dayNumber);
 
                 const events = getEvents(year, month + 1, dayOfMonth);
                 if (events.length > 0) {
