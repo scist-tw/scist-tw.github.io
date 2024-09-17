@@ -5,8 +5,8 @@ section#calendar.section
             each event in calendar.events
                 .calendar-event
                     .calendar-event-date
-                        .calendar-event-month= event.date.toLocaleString('zh-TW', { month: 'short' })
-                        .calendar-event-day= event.date.getDate()
+                        .calendar-event-month= new Date(event.date).toLocaleString('zh-TW', { month: 'short' })
+                        .calendar-event-day= new Date(event.date).getDate()
                     .calendar-event-details
                         h4.calendar-event-name= event.name
                         p.calendar-event-location
