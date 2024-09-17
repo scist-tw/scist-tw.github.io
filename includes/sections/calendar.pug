@@ -2,14 +2,16 @@ section#calendar.section
     .container
         h2.title.has-text-centered #{calendar.title}
         .calendar-container
-            each event in calendar.events
-                .calendar-event
-                    .calendar-event-date
-                        .calendar-event-month= new Date(event.date).toLocaleString('zh-TW', { month: 'short' })
-                        .calendar-event-day= new Date(event.date).getDate()
-                    .calendar-event-details
-                        h4.calendar-event-name= event.name
-                        p.calendar-event-location
-                            i.fas.fa-map-marker-alt
-                            span= event.location
-                        a.button.is-link(href=event.url target="_blank") 活動網站
+            .calendar-header
+                button.calendar-prev
+                    i.fas.fa-chevron-left
+                .calendar-current-date
+                button.calendar-next
+                    i.fas.fa-chevron-right
+            .calendar-grid
+                each day in ['日', '一', '二', '三', '四', '五', '六']
+                    .calendar-grid-header= day
+                - var days = 35
+                while days > 0
+                    .calendar-grid-day(data-date=days)
+                        - days--

@@ -228,9 +228,36 @@ ul {
 }
 
 .calendar-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.calendar-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-grid-header {
+  text-align: center;
+  font-weight: bold;
+}
+
+.calendar-grid-day {
+  aspect-ratio: 1;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+.calendar-grid-day.has-event {
+  background-color: #f0f0f0;
 }
 
 .calendar-event {
