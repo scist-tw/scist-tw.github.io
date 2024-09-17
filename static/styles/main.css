@@ -249,10 +249,10 @@ ul {
 
 .calendar-grid-header,
 .calendar-grid-day {
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   background-color: #fff;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .calendar-grid-header {
