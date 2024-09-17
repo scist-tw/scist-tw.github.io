@@ -17,30 +17,28 @@ document.addEventListener('DOMContentLoaded', function () {
         const daysInMonth = lastDay.getDate();
         const firstDayOfWeek = firstDay.getDay();
 
-        calendarGrid.innerHTML = '';
+        const calendarDays = calendarGrid.querySelectorAll('.calendar-grid-day');
 
-        for (let i = 1; i <= daysInMonth; i++) {
-            const day = document.createElement('div');
-            day.classList.add('calendar-grid-day');
-            day.textContent = i;
-            day.dataset.date = i;
+        calendarDays.forEach((day, index) => {
+            day.textContent = '';
+            day.classList.remove('has-event', 'is-today', 'is-empty');
 
-            if (hasEvent(year, month, i)) {
-                day.classList.add('has-event');
+            const dayOfMonth = index - firstDayOfWeek + 1;
+            if (dayOfMonth > 0 && dayOfMonth <= daysInMonth) {
+                day.textContent = dayOfMonth;
+                day.dataset.date = dayOfMonth;
+
+                if (hasEvent(year, month, dayOfMonth)) {
+                    day.classList.add('has-event');
+                }
+
+                if (isToday(year, month, dayOfMonth)) {
+                    day.classList.add('is-today');
+                }
+            } else {
+                day.classList.add('is-empty');
             }
-
-            if (isToday(year, month, i)) {
-                day.classList.add('is-today');
-            }
-
-            calendarGrid.appendChild(day);
-        }
-
-        for (let i = 0; i < firstDayOfWeek; i++) {
-            const emptyDay = document.createElement('div');
-            emptyDay.classList.add('calendar-grid-day', 'is-empty');
-            calendarGrid.insertBefore(emptyDay, calendarGrid.firstChild);
-        }
+        });
     }
 
     function hasEvent(year, month, day) {

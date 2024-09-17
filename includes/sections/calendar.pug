@@ -8,10 +8,8 @@ section#calendar.section
                 .calendar-current-date
                 button.calendar-next
                     i.fas.fa-chevron-right
-            .calendar-grid
-                each day in ['日', '一', '二', '三', '四', '五', '六']
-                    .calendar-grid-header= day
-                - var days = 35
-                while days > 0
-                    .calendar-grid-day(data-date=days)
-                        - days--
+        .calendar-grid
+            each day in ['日', '一', '二', '三', '四', '五', '六']
+                .calendar-grid-header= day
+            - for (var i = 1; i <= 42; i++)
+                .calendar-grid-day
