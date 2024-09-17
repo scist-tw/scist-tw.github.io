@@ -29,10 +29,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 day.classList.add('has-event');
             }
 
+            if (isToday(year, month, i)) {
+                day.classList.add('is-today');
+            }
+
             calendarGrid.appendChild(day);
         }
 
-        // 生成月初的空白格子
         for (let i = 0; i < firstDayOfWeek; i++) {
             const emptyDay = document.createElement('div');
             emptyDay.classList.add('calendar-grid-day', 'is-empty');
@@ -45,6 +48,15 @@ document.addEventListener('DOMContentLoaded', function () {
         event.date.year === year &&
         event.date.month === month + 1 &&
         event.date.day === day
+        );
+    }
+
+    function isToday(year, month, day) {
+        const today = new Date();
+        return (
+            year === today.getFullYear() &&
+            month === today.getMonth() &&
+            day === today.getDate()
         );
     }
 

@@ -242,18 +242,25 @@ ul {
 .calendar-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 5px;
+  gap: 1px;
+  background-color: #ddd;
+  border: 1px solid #ddd;
+}
+
+.calendar-grid-header,
+.calendar-grid-day {
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
 }
 
 .calendar-grid-header {
-  text-align: center;
   font-weight: bold;
 }
 
-.calendar-grid-day {
-  aspect-ratio: 1;
-  border: 1px solid #ccc;
-  padding: 5px;
+.calendar-grid-day.is-today {
+  background-color: #f0f0f0;
+  font-weight: bold;
 }
 
 .calendar-grid-day.has-event {
@@ -304,4 +311,14 @@ ul {
 
 .calendar-event-location i {
   margin-right: 0.5rem;
+}
+
+.calendar-grid-day.has-event::after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #4285f4;
+  margin: 5px auto 0;
 }
