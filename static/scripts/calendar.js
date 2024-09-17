@@ -20,22 +20,23 @@ document.addEventListener('DOMContentLoaded', function () {
         calendarGrid.innerHTML = '';
 
         for (let i = 1; i <= daysInMonth; i++) {
-        const day = document.createElement('div');
-        day.classList.add('calendar-grid-day');
-        day.textContent = i;
-        day.dataset.date = i;
+            const day = document.createElement('div');
+            day.classList.add('calendar-grid-day');
+            day.textContent = i;
+            day.dataset.date = i;
 
-        if (hasEvent(year, month, i)) {
-            day.classList.add('has-event');
+            if (hasEvent(year, month, i)) {
+                day.classList.add('has-event');
+            }
+
+            calendarGrid.appendChild(day);
         }
 
-        calendarGrid.appendChild(day);
-        }
-
+        // 生成月初的空白格子
         for (let i = 0; i < firstDayOfWeek; i++) {
-        const emptyDay = document.createElement('div');
-        emptyDay.classList.add('calendar-grid-day');
-        calendarGrid.insertBefore(emptyDay, calendarGrid.firstChild);
+            const emptyDay = document.createElement('div');
+            emptyDay.classList.add('calendar-grid-day', 'is-empty');
+            calendarGrid.insertBefore(emptyDay, calendarGrid.firstChild);
         }
     }
 
