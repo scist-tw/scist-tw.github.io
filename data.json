@@ -274,6 +274,23 @@
             }
         }
     },
+    "calendar": {
+        "title": "近期活動",
+        "events": [
+            {
+                "name": "SCIST S5 資安推廣課程",
+                "date": "2024-09-14",
+                "location": "國立臺南第一高級中學",
+                "url": "https://camp.scist.org"  
+            },
+            {
+                "name": "SCIST S5 演算推廣課程",
+                "date": "2024-09-15",
+                "location": "國立臺南第一高級中學",
+                "url": "https://camp.scist.org"  
+            }
+        ]
+    },
     "link": {
         "title": "對 SCIST 感興趣嗎？",
         "subtitle": "關注我們的 FB 可以獲得更多資訊"
