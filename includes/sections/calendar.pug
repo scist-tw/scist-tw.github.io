@@ -1,15 +1,15 @@
 section#calendar.section
-    .container
-        h2.title.has-text-centered #{calendar.title}
-        .calendar-container
-            .calendar-header
-                button.calendar-prev
-                    i.fas.fa-chevron-left
+    .section-padding
+    .section
+        .container
+            h2.title.has-text-centered #{calendar.title}
+            .calendar-container
+                .calendar-header
+                    button.calendar-prev
+                        i.fas.fa-chevron-left
                 .calendar-current-date
                 button.calendar-next
                     i.fas.fa-chevron-right
-        .calendar-grid
-            each day in ['日', '一', '二', '三', '四', '五', '六']
-                .calendar-grid-header= day
-            - for (var i = 1; i <= 42; i++)
-                .calendar-grid-day
+            .calendar-grid
+                each day in ['日', '一', '二', '三', '四', '五', '六']
+                    .calendar-grid-header= day
