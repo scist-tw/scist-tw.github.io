@@ -60,29 +60,7 @@
         }
     },
     "calendar": {
-        "title": "行事曆",
-        "events": [
-            {
-                "name": "SCIST S5 資安推廣課程",
-                "date": {
-                    "year": 2024,
-                    "month": 9,
-                    "day": 14
-                },
-                "location": "國立臺南第一高級中學",
-                "url": "https://camp.scist.org"
-            },
-            {
-                "name": "SCIST S5 演算推廣課程",
-                "date": {
-                    "year": 2024,
-                    "month": 9,
-                    "day": 15
-                },
-                "location": "國立臺南第一高級中學",
-                "url": "https://camp.scist.org"
-            }
-        ]
+        "title": "SCIST Google 日曆"
     },
     "clubs": {
         "title": "參與學校",
