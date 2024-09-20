@@ -1,5 +1,5 @@
 .columns
-  .column
+  .column.has-background-success-light.p-4
     h4.title.is-4.has-text-centered 初階班
     each semester in courses.algorithm.beginner
       .box
@@ -9,13 +9,13 @@
           ul
             each topic in category.topics
               li= topic
-  .column
-    h4.title.is-4.has-text-centered 進階班  
+  .column.has-background-info-light.p-4  
+    h4.title.is-4.has-text-centered 進階班
     each semester in courses.algorithm.advanced
-      .box
+      .box  
         h5.subtitle.is-5.has-text-centered #{semester.name}
         each category in semester.categories
-          h6.subtitle.is-6 #{category.name}  
+          h6.subtitle.is-6 #{category.name}
           ul
             each topic in category.topics
               li= topic
@@ -23,10 +23,10 @@
 .has-text-centered
   | 初階班目標：零程式基礎 -> APCS 
   a(href="https://apcs.csie.ntnu.edu.tw/" target="_blank" rel="noopener noreferrer")
-    u 觀念 3/實作 3 級分以上
+    u 觀念 3/實作 3 級分以上 
   br
-  | 進階班目標：有 C++ 語法基礎 -> APCS 
-  a(href="https://apcs.csie.ntnu.edu.tw/" target="_blank" rel="noopener noreferrer") 
+  | 進階班目標：有 C++ 語法基礎 -> APCS  
+  a(href="https://apcs.csie.ntnu.edu.tw/" target="_blank" rel="noopener noreferrer")
     u 觀念 4/實作 4 級分以上
   | ,並能在各大程式競賽中獲獎.
 
