@@ -1,12 +1,25 @@
-| 我們將會從基礎 C++ 語法開始帶起,慢慢進入到演算法的世界。
-br
-| 其中包括:
-ul
-  each category in courses.algorithm.list
-    li= category.name
-    ul
-      each topic in category.topics
-        li= topic
+.columns
+  .column
+    h4.title.is-4.has-text-centered 初階班
+    each semester, index in courses.algorithm.beginner
+      h5.subtitle.is-5 #{semester.name}
+      ul
+        each category in semester.categories
+          li= category.name
+            ul
+              each topic in category.topics
+                li= topic
+  .column
+    h4.title.is-4.has-text-centered 進階班
+    each semester, index in courses.algorithm.advanced  
+      h5.subtitle.is-5 #{semester.name}
+        ul
+          each category in semester.categories
+            li= category.name
+              ul
+                each topic in category.topics
+                  li= topic
+
 br
 | 初階班目標：零程式基礎 -> APCS 
 a(href="https://apcs.csie.ntnu.edu.tw/" target="_blank" rel="noopener noreferrer")
