@@ -7,6 +7,14 @@
         ul
           each topic in semester.topics
             li= topic
+  .column.p-4(style="background-color: #B9B9FF;")
+    h4.title.is-4.has-text-white.has-text-centered 
+      each semester in courses.algorithm.middle
+        .box
+          h5.subtitle.is-5.has-text-black.has-text-centered #{semester.name}
+          ul
+            each topic in semester.topics
+              li= topic
   .column.p-4(style="background-color: #3298dc;")
     h4.title.is-4.has-text-white.has-text-centered 進階班
     each semester in courses.algorithm.advanced
