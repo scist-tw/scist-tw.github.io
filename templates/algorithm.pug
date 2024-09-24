@@ -1,29 +1,26 @@
 .columns
   .column.p-4(style="background-color: #48c774;")
     h4.title.is-4.has-text-white.has-text-centered 初階班
-    each semester in courses.algorithm.beginner
-      .box
-        h5.subtitle.is-5.has-text-black.has-text-centered #{semester.name}
-        ul
-          each topic in semester.topics
-            li= topic
+    .box
+      h5.subtitle.is-5.has-text-black.has-text-centered 上學期
+      ul
+        each topic in courses.algorithm.beginner[0].topics
+          li= topic
   .column.p-4(style="background-color: #B9B9FF;")
     h4.title.is-4.has-text-white.has-text-centered 
-      each semester in courses.algorithm.middle
-        .box
-          h5.subtitle.is-5.has-text-black.has-text-centered #{semester.name}
-          ul
-            each topic in semester.topics
-              li= topic
+    .box
+      h5.subtitle.is-5.has-text-black.has-text-centered 下學期/上學期
+      ul
+        each topic in courses.algorithm.middle[0].topics
+          li= topic
   .column.p-4(style="background-color: #3298dc;")
     h4.title.is-4.has-text-white.has-text-centered 進階班
-    each semester in courses.algorithm.advanced
-      .box
-        h5.subtitle.is-5.has-text-black.has-text-centered #{semester.name}
-        ul
-          each topic in semester.topics
-            li= topic
-            
+    .box  
+      h5.subtitle.is-5.has-text-black.has-text-centered 下學期
+      ul
+        each topic in courses.algorithm.advanced[0].topics
+          li= topic
+          
 .has-text-centered
   | 初階班目標：零程式基礎 -> 
   a(href="https://apcs.csie.ntnu.edu.tw/" target="_blank" rel="noopener noreferrer")
@@ -36,5 +33,5 @@
     u APCS 
   | 觀念 4/實作 4 級分以上
   br
-  | 並能在各大程式競賽中獲獎.
+  | 並能在各大程式競賽中獲獎。
 
