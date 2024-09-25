@@ -11,12 +11,11 @@
               ul
                 each subtopic in topic.subtopics
                   li= subtopic
-  .column.p-4(style="background-color: #D1E7FF; position: relative; border-top: 2px dashed #48c774; border-bottom: 2px dashed #48c774; border-left: 2px dashed #3298dc; border-right: 2px dashed #48c774;")
-  .box
-    h4.title.is-4.has-text-centered.column-title.middle(style="color: #D1E7FF;") 重複段
+  .column.p-4(style="background-color: #D1E7FF;")
+    h4.title.is-4.has-text-centered(style="color: #D1E7FF;") 重複段
     each semester in courses.algorithm.middle
       .box
-        h5.subtitle.is-5.has-text-black.has-text-left.semester-title #{semester.name}
+        h5.subtitle.is-5.has-text-black.has-text-centered #{semester.name}
         ul
           each topic in semester.topics
             li
