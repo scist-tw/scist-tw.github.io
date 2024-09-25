@@ -12,12 +12,12 @@
                 each subtopic in topic.subtopics
                   li= subtopic
   .column.p-4(style="background-color: #D1E7FF;")
-    h4.title.is-4.has-text-centered(style="color: #D1E7FF;") 重複段
+    h4.title.is-4.has-text-centered(style="color: #D1E7FF; border-top: 2px dashed #48c774; border-bottom: 2px dashed #48c774; border-left: 2px dashed #3298dc; border-right: 2px dashed #48c774;") 重複段
     each semester in courses.algorithm.middle
       .box
         h5.subtitle.is-5.has-text-black.has-text-centered #{semester.name}
         ul
-          each topic in semester.topics
+          each topic in semester.topicsˇ
             li
               h6.subtitle.is-6.has-text-black #{topic.name}
               ul
