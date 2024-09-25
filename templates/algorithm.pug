@@ -1,45 +1,30 @@
-.columns.is-variable.is-2
-  .column.p-4.has-background-success
-    h4.title.is-4.has-text-white.has-text-right 初階班
-    .box.py-2
-      h5.subtitle.is-5.has-text-black.has-text-centered 上學期
-      ul.ml-5
-        each topic in courses.algorithm.beginner[0].topics
-          li= topic.name
-            ul
-              each subtopic in topic.subtopics  
-                li= subtopic
-  .column
-    .p-4.has-background-link-light
-      .box.py-2
-        h5.subtitle.is-5.has-text-black.has-text-centered 下學期
-        ul.ml-5
-          each topic in courses.algorithm.middle[0].topics
-            li= topic.name
-              ul
-                each subtopic in topic.subtopics
-                  li= subtopic
-    .p-4.has-background-link  
-      .box.py-2
-        h5.subtitle.is-5.has-text-black.has-text-centered 上學期
-        ul.ml-5
-          each topic in courses.algorithm.middle[1].topics
-            li= topic.name
-              ul
-                each subtopic in topic.subtopics
-                  li= subtopic
-  .column.p-4.has-background-info
-    h4.title.is-4.has-text-white.has-text-left 進階班 
-    .box.py-2
-      h5.subtitle.is-5.has-text-black.has-text-centered 下學期
-      ul.ml-5
-        each topic in courses.algorithm.advanced[0].topics
-          li= topic.name
-            ul
-              each subtopic in topic.subtopics
-                li= subtopic
-                
-.has-text-centered.mt-5
+.columns
+  .column.p-4(style="background-color: #48c774;")
+    h4.title.is-4.has-text-white.has-text-centered 初階班
+    each semester in courses.algorithm.beginner
+      .box
+        h5.subtitle.is-5.has-text-black.has-text-centered #{semester.name}
+        ul
+          each topic in semester.topics
+            li= topic
+  .column.p-4(style="background-color: #B9B9FF;") 重複段
+    h4.title.is-4.has-text-white.has-text-centered 
+      each semester in courses.algorithm.middle
+        .box
+          h5.subtitle.is-5.has-text-black.has-text-centered #{semester.name}
+          ul
+            each topic in semester.topics
+              li= topic
+  .column.p-4(style="background-color: #3298dc;")
+    h4.title.is-4.has-text-white.has-text-centered 進階班
+    each semester in courses.algorithm.advanced
+      .box
+        h5.subtitle.is-5.has-text-black.has-text-centered #{semester.name}
+        ul
+          each topic in semester.topics
+            li= topic
+            
+.has-text-centered
   | 初階班目標：零程式基礎 -> 
   a(href="https://apcs.csie.ntnu.edu.tw/" target="_blank" rel="noopener noreferrer")
     u APCS 
@@ -51,5 +36,5 @@
     u APCS 
   | 觀念 4/實作 4 級分以上
   br
-  | 並能在各大程式競賽中獲獎。
+  | 並能在各大程式競賽中獲獎.
 
