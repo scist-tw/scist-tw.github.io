@@ -1,34 +1,34 @@
 .columns
-  .column.p-4(style="background-color: #48c774;")
-    h4.title.is-4.has-text-white.has-text-right 初階班
-    each semester in courses.algorithm.beginner
-      .box
-        h5.subtitle.is-5.has-text-black.has-text-centered #{semester.name}
-        each topic in semester.topics
-          h6.subtitle.is-6.has-text-black.has-text-centered #{topic.name}
-          ul
-            each subtopic in topic.subtopics
-              li= subtopic
-  .column.p-4(style="background-color: #2bd3a8; border-top: 5px dashed #7e9dbf; border-bottom: 5px dashed #7e9dbf; border-left: 5px dashed #3298dc; border-right: 5px dashed #48c774;")
-    h4.title.is-4.has-text-centered(style="color: #2bd3a8;") 重複段
-    each semester in courses.algorithm.middle
-      .box
-        h5.subtitle.is-5.has-text-black.has-text-centered #{semester.name}
-        each topic in semester.topics
-          h6.subtitle.is-6.has-text-black.has-text-centered #{topic.name}
-          ul
-            each subtopic in topic.subtopics
-              li= subtopic
-  .column.p-4(style="background-color: #3298dc;")
-    h4.title.is-4.has-text-white.has-text-left 進階班
-    each semester in courses.algorithm.advanced
-      .box
-        h5.subtitle.is-5.has-text-black.has-text-centered #{semester.name}
-        each topic in semester.topics
-          h6.subtitle.is-6.has-text-black.has-text-centered #{topic.name}
-          ul
-            each subtopic in topic.subtopics
-              li= subtopic
+  .column.p-4(style="background-color: #48c774; position: relative;")
+      h4.title.is-4.has-text-white.has-text-centered.column-title 初階班
+      each semester in courses.algorithm.beginner
+        .box
+          h5.subtitle.is-5.has-text-black.has-text-centered.semester-title #{semester.name}
+          each topic in semester.topics
+            h6.subtitle.is-6.has-text-black.has-text-centered #{topic.name}
+            ul
+              each subtopic in topic.subtopics
+                li.has-text-black= subtopic
+  .column.p-4(style="background-color: #3eafa8; position: relative; border-top: 5px dashed #7e9dbf; border-bottom: 5px dashed #7e9dbf; border-left: 5px dashed #3298dc; border-right: 5px dashed #48c774;")
+      h4.title.is-4.has-text-centered.column-title.middle(style="color: #3eafa8;") 重複段
+      each semester in courses.algorithm.middle
+        .box
+          h5.subtitle.is-5.has-text-black.has-text-centered.semester-title #{semester.name}
+          each topic in semester.topics
+            h6.subtitle.is-6.has-text-black.has-text-centered #{topic.name}
+            ul
+              each subtopic in topic.subtopics
+                li.has-text-black= subtopic
+  .column.p-4(style="background-color: #3298dc; position: relative;")
+      h4.title.is-4.has-text-white.has-text-centered.column-title 進階班
+      each semester in courses.algorithm.advanced
+        .box
+          h5.subtitle.is-5.has-text-black.has-text-centered.semester-title #{semester.name}
+          each topic in semester.topics
+            h6.subtitle.is-6.has-text-black.has-text-centered #{topic.name}
+            ul
+              each subtopic in topic.subtopics
+                li.has-text-black= subtopic
 
 .has-text-centered
   | 初階班目標：零程式基礎 ->
