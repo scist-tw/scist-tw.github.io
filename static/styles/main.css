@@ -233,3 +233,31 @@ ul {
   flex-direction: column;
   justify-content: space-between;
 }
+
+/* 新增的CSS */
+.column-title {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 0 0.5rem;
+}
+
+.column-title.middle {
+  border: 2px dashed #0000FF;
+}
+
+.subtitle.is-5 {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+.semester-title {
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 0 0.5rem;
+}
