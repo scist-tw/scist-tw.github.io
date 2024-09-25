@@ -1,6 +1,6 @@
 .columns
   .column.p-4(style="background-color: #48c774; position: relative;")
-      h4.title.is-4.has-text-white.has-text-centered.column-title 初階班
+      h4.title.is-4.has-text-white.has-text-centered 初階班
       each semester in courses.algorithm.beginner
         .box
           h5.subtitle.is-5.has-text-black.has-text-centered.semester-title #{semester.name}
@@ -9,8 +9,8 @@
             ul
               each subtopic in topic.subtopics
                 li.has-text-black= subtopic
-  .column.p-4(style="background-color: #3eafa8; position: relative; border-top: 5px dashed #7e9dbf; border-bottom: 5px dashed #7e9dbf; border-left: 5px dashed #3298dc; border-right: 5px dashed #48c774;")
-      h4.title.is-4.has-text-centered.column-title.middle(style="color: #3eafa8;") 重複段
+  .column.p-4(style="background-color: #3eafa8; position: relative;border-left: 5px dashed #3298dc; border-right: 5px dashed #48c774;")
+      h4.title.is-4.has-text-centered(style="color: #3eafa8;") 重複段
       each semester in courses.algorithm.middle
         .box
           h5.subtitle.is-5.has-text-black.has-text-centered.semester-title #{semester.name}
@@ -20,7 +20,7 @@
               each subtopic in topic.subtopics
                 li.has-text-black= subtopic
   .column.p-4(style="background-color: #3298dc; position: relative;")
-      h4.title.is-4.has-text-white.has-text-centered.column-title 進階班
+      h4.title.is-4.has-text-white.has-text-centered 進階班
       each semester in courses.algorithm.advanced
         .box
           h5.subtitle.is-5.has-text-black.has-text-centered.semester-title #{semester.name}
