@@ -7,19 +7,19 @@
         ul
           each topic in semester.topics
             li
-              h6.subtitle.is-6 #{topic.name}
+              h6.subtitle.is-6.has-text-black #{topic.name}
               ul
                 each subtopic in topic.subtopics
                   li= subtopic
   .column.p-4(style="background-color: #B9B9FF;")
-    h4.title.is-4.has-text-white.has-text-centered 進階班
+    h4.title.is-4.has-text-white.has-text-centered(style="color: #B9B9FF;") 中階班
     each semester in courses.algorithm.middle
       .box
         h5.subtitle.is-5.has-text-black.has-text-centered #{semester.name}
         ul
           each topic in semester.topics
             li
-              h6.subtitle.is-6 #{topic.name}
+              h6.subtitle.is-6.has-text-black #{topic.name}
               ul
                 each subtopic in topic.subtopics
                   li= subtopic
@@ -31,7 +31,7 @@
         ul
           each topic in semester.topics
             li
-              h6.subtitle.is-6 #{topic.name}
+              h6.subtitle.is-6.has-text-black #{topic.name}
               ul
                 each subtopic in topic.subtopics
                   li= subtopic
