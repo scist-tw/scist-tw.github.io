@@ -49,7 +49,7 @@
             ],
             "middle": [
                 {
-                    "name": "下學期                                 上學期",
+                    "name": "下學期 上學期",
                     "topics": [
                         {
                             "name": "基礎資料結構與演算法",
@@ -109,15 +109,15 @@
         "all_clubs": {
             "CY": [{
                     "school": "嘉義高中",
-                    "name": "電腦社",
+                    "name": "資訊研究社",
                     "social": {},
-                    "image": "cycc.jpg"
+                    "image": "cycc.png"
                 },
                 {
                     "school": "嘉義女中",
                     "name": "資訊研究社",
                     "social": {},
-                    "image": "prc.jpg"
+                    "image": "prc.jpeg"
                 },
                 {
                     "school": "嘉華高中",
@@ -127,9 +127,9 @@
                 },
                 {
                     "school": "永慶高中",
-                    "name": "資訊社",
+                    "name": "資訊研究社",
                     "social": {},
-                    "image": "club.jpg"
+                    "image": "ycsh.png"
                 }
             ],
             "TN": [{
@@ -158,9 +158,9 @@
                 }, 
                 {
                     "school": "南大附中",
-                    "name": "資訊社",
+                    "name": "資訊研究社",
                     "social": {},
-                    "image": "csirc.jpg"
+                    "image": "nfirc.png"
                 }, 
                 {
                     "school": "黎明中學",
@@ -172,7 +172,7 @@
                     "school": "成大南工",
                     "name": "資訊社",
                     "social": {},
-                    "image": "club.jpg"
+                    "image": "ptivs.jpg"
                 }
             ],
             "KHPT": [{
@@ -198,6 +198,12 @@
                     "name": "資訊社",
                     "social": {},
                     "image": "club.jpg"
+                },
+                {
+                    "school": "鳳新高中",
+                    "name": "電腦研究社",
+                    "social": {},
+                    "image": "fhsh.jpg"
                 }, 
                 {
                     "school": "屏東高中",
