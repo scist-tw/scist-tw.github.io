@@ -111,13 +111,13 @@
                     "school": "嘉義高中",
                     "name": "資訊研究社",
                     "social": {},
-                    "image": "cycc.png"
+                    "image": "cycc.jpg"
                 },
                 {
                     "school": "嘉義女中",
                     "name": "資訊研究社",
                     "social": {},
-                    "image": "prc.jpeg"
+                    "image": "prc.jpg"
                 },
                 {
                     "school": "嘉華高中",
@@ -129,7 +129,7 @@
                     "school": "永慶高中",
                     "name": "資訊研究社",
                     "social": {},
-                    "image": "ycsh.png"
+                    "image": "ycsh.jpg"
                 }
             ],
             "TN": [{
@@ -160,7 +160,7 @@
                     "school": "南大附中",
                     "name": "資訊研究社",
                     "social": {},
-                    "image": "nfirc.png"
+                    "image": "nfirc.jpg"
                 }, 
                 {
                     "school": "黎明中學",
