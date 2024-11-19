@@ -231,8 +231,7 @@
                 "animation": "fade-left"
             }
         ],
-        "social_config": [
-            {
+        "social_config": [{
                 "name": "ig",
                 "color": "is-danger",
                 "icon": "fab fa-instagram-square",
