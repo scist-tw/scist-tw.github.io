@@ -25,6 +25,10 @@ section#clubs.hero.is-warning.is-medium.is-bold
                       br
                     nav.is-mobile
                       .buttons.are-small
+                        social_config.sort((a, b) => {
+                          const priority = ['ig', 'fb', 'site']; // Instagram 優先於 Facebook
+                          return priority.indexOf(a.name) - priority.indexOf(b.name);
+                        });
                         each social in social_config
                           if club.social[social.name]
                             a.button.is-light(
