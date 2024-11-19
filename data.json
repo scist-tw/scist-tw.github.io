@@ -184,7 +184,9 @@
                 {
                     "school": "高雄女中",
                     "name": "電腦資訊暨網路科技研究社",
-                    "social": {},
+                    "social": {
+                        "ig": "kghs_i2trc2"
+                    },
                     "image": "i2trc2.jpg"
                 },
                 {
