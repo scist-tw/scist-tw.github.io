@@ -231,7 +231,14 @@
                 "animation": "fade-left"
             }
         ],
-        "social_config": [{
+        "social_config": [
+            {
+                "name": "ig",
+                "color": "is-danger",
+                "icon": "fab fa-instagram-square",
+                "prefix": "https://instagr.am/"
+            },
+            {
                 "name": "site",
                 "color": "is-success",
                 "icon": "fas fa-globe"
@@ -241,12 +248,6 @@
                 "color": "is-info",
                 "icon": "fab fa-facebook",
                 "prefix": "https://fb.me/"
-            },
-            {
-                "name": "ig",
-                "color": "is-danger",
-                "icon": "fab fa-instagram-square",
-                "prefix": "https://instagr.am/"
             }
         ]
     },
