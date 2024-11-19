@@ -1,4 +1,7 @@
 - const { all_clubs, cities_config, social_config } = clubs
+- const ig = social_config.filter(s => s.name === 'ig');
+- const others = social_config.filter(s => s.name !== 'ig');
+
 
 section#clubs.hero.is-warning.is-medium.is-bold
   .hero-body
@@ -25,7 +28,7 @@ section#clubs.hero.is-warning.is-medium.is-bold
                       br
                     nav.is-mobile
                       .buttons.are-small
-                        each social in social_config
+                        each social in ig.concat(others)
                           if club.social[social.name]
                             a.button.is-light(
                               href=`${social.prefix || ''}${social.name === 'fb' ? club.social[social.name][0] : club.social[social.name]}`
