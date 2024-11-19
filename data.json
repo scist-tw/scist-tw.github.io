@@ -241,12 +241,6 @@
                 "name": "site",
                 "color": "is-success",
                 "icon": "fas fa-globe"
-            },
-            {
-                "name": "fb",
-                "color": "is-info",
-                "icon": "fab fa-facebook",
-                "prefix": "https://fb.me/"
             }
         ]
     },
