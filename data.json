@@ -1,353 +1,356 @@
 {
-    "aboutus": {
-        "title": "關於我們",
-        "description": "SCIST 是一群來自嘉義、台南、高雄和屏東四地的高中學生，經過許多活動以及比賽後深深感受到南北資訊能力以及資源的落差，我們希望透過 SCIST 舉辦的課程、研討會帶動南部學生的資訊能力水平，同時也帶來更多資源提供所有人進行學習！",
-        "items": [{
-                "title": "南臺灣",
-                "icon": "fa-compass"
-            },
+  "aboutus": {
+    "title": "關於我們",
+    "description": "SCIST 是一群來自嘉義、台南、高雄和屏東四地的高中學生，經過許多活動以及比賽後深深感受到南北資訊能力以及資源的落差，我們希望透過 SCIST 舉辦的課程、研討會帶動南部學生的資訊能力水平，同時也帶來更多資源提供所有人進行學習！",
+    "items": [
+      {
+        "title": "南臺灣",
+        "icon": "fa-compass"
+      },
+      {
+        "title": "學生",
+        "icon": "fa-school"
+      },
+      {
+        "title": "資訊",
+        "icon": "fa-code"
+      },
+      {
+        "title": "社群",
+        "icon": "fa-users"
+      }
+    ]
+  },
+  "courses": {
+    "title": "課程內容",
+    "algorithm": {
+      "title": "演算法",
+      "svg": ["algorithm.svg", "object.svg", "code.svg", "idea.svg"],
+      "beginner": [
+        {
+          "name": "上學期",
+          "topics": [
             {
-                "title": "學生",
-                "icon": "fa-school"
-            },
-            {
-                "title": "資訊",
-                "icon": "fa-code"
-            },
-            {
-                "title": "社群",
-                "icon": "fa-users"
+              "name": "C++ 語法",
+              "subtopics": [
+                "輸入輸出、運算子、變數",
+                "條件判斷式",
+                "迴圈、陣列",
+                "字元、字串",
+                "函式、結構"
+              ]
             }
-        ]
-    },
-    "courses": {
-        "title": "課程內容",
-        "algorithm": {
-            "title": "演算法",
-            "svg": [
-                "algorithm.svg",
-                "object.svg",
-                "code.svg",
-                "idea.svg"
-            ],
-            "beginner": [
-                {
-                    "name": "上學期",
-                    "topics": [
-                        {
-                            "name": "C++ 語法",
-                            "subtopics": [
-                                "輸入輸出、運算子、變數",
-                                "條件判斷式",
-                                "迴圈、陣列",
-                                "字元、字串", 
-                                "函式、結構"
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "middle": [
-                {
-                    "name": "下學期 上學期",
-                    "topics": [
-                        {
-                            "name": "基礎資料結構與演算法",
-                            "subtopics": [
-                                "複雜度分析",
-                                "STL 資料結構",
-                                "遞迴",
-                                "排序",
-                                "搜尋",
-                                "單調性與差分"  
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "advanced": [
-                {
-                    "name": "下學期",
-                    "topics": [
-                        {
-                            "name": "進階資料結構與演算法",
-                            "subtopics": [
-                                "DP 動態規劃",
-                                "Greedy 貪心法", 
-                                "基礎數論",
-                                "基礎圖論、BFS & DFS",
-                                "進階資料結構",
-                                "RMQ"
-                            ]  
-                        }
-                    ]
-                }
-            ]
-        },
-        "security": {
-            "title": "資訊安全",
-            "svg": [
-                "encryption.svg",
-                "identity.svg",
-                "cloud.svg",
-                "server.svg"
-            ],
-            "list": [
-                "PWN",
-                "密碼學",
-                "逆向工程",
-                "網頁安全",
-                "數位鑑識"
-            ]
+          ]
         }
-    },
-    "calendar": {
-        "title": "SCIST 公開日曆"
-    },
-    "clubs": {
-        "title": "參與學校",
-        "all_clubs": {
-            "CY": [{
-                    "school": "嘉義高中",
-                    "name": "資訊研究社",
-                    "social": {
-                        "ig": "cysh_irc"
-                    },
-                    "image": "cycc.jpg"
-                },
-                {
-                    "school": "嘉義女中",
-                    "name": "資訊研究社",
-                    "social": {},
-                    "image": "prc.jpg"
-                },
-                {
-                    "school": "嘉華高中",
-                    "name": "資訊社",
-                    "social": {
-                        "ig": "frc_8584"
-                    },
-                    "image": "frc_8584.jpg"
-                },
-                {
-                    "school": "永慶高中",
-                    "name": "資訊研究社",
-                    "social": {},
-                    "image": "ycsh.jpg"
-                }
-            ],
-            "TN": [{
-                    "school": "臺南一中",
-                    "name": "資訊社",
-                    "social": {},
-                    "image": "tfcis.jpg"
-                },
-                {
-                    "school": "臺南女中",
-                    "name": "資訊研究社",
-                    "social": {},
-                    "image": "tgric.jpg"
-                },
-                {
-                    "school": "興國高中",
-                    "name": "資訊應用社",
-                    "social": {},
-                    "image": "hkhs.jpg"
-                }, 
-                {
-                    "school": "臺南二中",
-                    "name": "資訊研究社",
-                    "social": {},
-                    "image": "ciss.jpg"
-                }, 
-                {
-                    "school": "南大附中",
-                    "name": "資訊研究社",
-                    "social": {
-                        "ig": "nfirc_2nd"
-                    },
-                    "image": "nfirc.jpg"
-                }, 
-                {
-                    "school": "黎明中學",
-                    "name": "程式設計研究社",
-                    "social": {},
-                    "image": "lmcps.jpg"
-                },
-                {
-                    "school": "成大南工",
-                    "name": "資訊社",
-                    "social": {},
-                    "image": "ptivs.jpg"
-                }
-            ],
-            "KHPT": [{
-                    "school": "高雄中學",
-                    "name": "程式設計社",
-                    "social": {
-                        "ig": "kspgc_115th"
-                    },
-                    "image": "kspgc.jpg"
-                },
-                {
-                    "school": "高雄女中",
-                    "name": "電腦資訊暨網路科技研究社",
-                    "social": {
-                        "ig": "kghs_i2trc2"
-                    },
-                    "image": "i2trc2.jpg"
-                },
-                {
-                    "school": "鳳山高中",
-                    "name": "電腦資訊社",
-                    "social": {
-                        "ig": "fssh.cs.club"
-                    },
-                    "image": "fscs.jpg"
-                }, 
-                {
-                    "school": "新莊高中",
-                    "name": "資訊社",
-                    "social": {},
-                    "image": "hcsh.jpg"
-                },
-                {
-                    "school": "鳳新高中",
-                    "name": "電腦研究社",
-                    "social": {
-                        "ig": "fhcrc_115th"
-                    },
-                    "image": "fhsh.jpg"
-                }, 
-                {
-                    "school": "屏東高中",
-                    "name": "資訊研習社",
-                    "social": {},
-                    "image": "circ.jpg"
-                }
-            ]
-        },
-        "cities_config": [{
-                "abbr": "CY",
-                "name": "嘉義",
-                "animation": "fade-right"
-            },
+      ],
+      "middle": [
+        {
+          "name": "下學期 上學期",
+          "topics": [
             {
-                "abbr": "TN",
-                "name": "臺南",
-                "animation": "fade-up"
-            },
-            {
-                "abbr": "KHPT",
-                "name": "高屏",
-                "animation": "fade-left"
+              "name": "基礎資料結構與演算法",
+              "subtopics": [
+                "複雜度分析",
+                "STL 資料結構",
+                "遞迴",
+                "排序",
+                "搜尋",
+                "單調性與差分"
+              ]
             }
-        ],
-        "social_config": [{
-                "name": "ig",
-                "color": "is-danger",
-                "icon": "fab fa-instagram-square",
-                "prefix": "https://instagr.am/"
-            },
-            {
-                "name": "site",
-                "color": "is-success",
-                "icon": "fas fa-globe"
-            }
-        ]
-    },
-    "credit": {
-        "coorganizers": {
-            "title": "協辦單位",
-            "organizes": [
-                {
-                    "name": "國立臺南第一高級中學",
-                    "image": "tnfsh.png"
-                }, 
-                {
-                    "name": "國立成功大學計算機與網路中心", 
-                    "image": "ncku.png"
-                },
-                {
-                    "name": "成大資安社 | B33F 50UP戰隊",
-                    "image": "beefsoup.png"
-                }
-            ]
-        },
-        "sponsors": {
-            "diamand": {
-                "title": "鑽石級贊助商", 
-                "organizes": [
-                    {
-                        "id": "devcore",
-                        "name": "DEVCORE 戴夫寇爾", 
-                        "image": "devcore.png", 
-                        "introList": [
-                            "DEVCORE 由世界級白帽駭客團隊創立，提供「紅隊演練、滲透測試、顧問服務、教育訓練」等服務，團隊皆以「高道德、高自律、高嚴謹」為執行原則，以業界頂尖的主動式攻擊服務，實質檢測企業的資安防禦，進而強化資安體質", 
-                            "DEVCORE 讓攻擊先於防禦，協助企業提升資安意識，迎戰與時俱進的攻擊型態"
-                        ]
-                    }, 
-                    {
-                        "id": "ytp", 
-                        "name": "YTP 少年圖靈計畫", 
-                        "image": "ytp.png", 
-                        "introList": [
-                            "精誠資訊 SYSTEX Corporation 成立於 1997 年，是台灣資訊服務產業龍頭企業，擁有約 4,200 名員工，位居台灣前一百大服務業，服務超過 30,000 家企業機構客戶，涵蓋兩岸三地、亞洲以及歐美區；代理經銷過 70 項產品，為多家國際級原廠的首要合作夥伴，2021 年合併營收為新台幣 295 億元。", 
-                            "由精誠資訊主辦的「Young Turing Program 少年圖靈計畫」，以電腦科學之父—艾倫．圖靈（Alan Turing）為名，Young Turing Program 少年圖靈計畫的成立，著眼於發掘年輕的軟體人才，透過程式競賽、專題實做、大學教授指導、企業志工導師輔導、海外參訪學習，啟發台灣學生對程式設計的興趣及熱誠，引導學生運用軟體力解決社會問題，或改善現況，進一步突破跟隨歐美制定標準的框架，勇於創新、創業，為台灣培育優秀軟人才，提升台灣軟體產業的高度，建立台灣的軟體國力。"
-                        ]
-                    }
-                ]
-            }, 
-            "plantium": {
-                "title": "白金級贊助商", 
-                "organizes": []
-            }, 
-            "gold" : {
-                "title": "黃金級贊助商", 
-                "organizes": []
-            }, 
-            "specialThanks": {
-                "title": "特別感謝", 
-                "organizes": [
-                    {
-                        "name": "HackMD",
-                        "image": "hackmd.png"
-                    },
-                    {
-                        "name": "AIS3 Club",
-                        "image": "AIS3_CLUB_logo.png"
-                    },
-                    {
-                        "name": "CNTUG",
-                        "image": "CNTUG.png"
-                    }
-                ]
-            }
+          ]
         }
-    },
-    "link": {
-        "title": "對 SCIST 感興趣嗎？",
-        "subtitle": "關注我們的社群可以獲得更多資訊"
-    },
-    "footer": {
-        "contacts": [{
-                "url": "https://fb.me/scist.tw",
-                "icon": "fab fa-facebook",
-                "color": "is-info",
-                "text": "SCIST"
-            },
+      ],
+      "advanced": [
+        {
+          "name": "下學期",
+          "topics": [
             {
-                "url": "mailto:official@scist.org",
-                "icon": "fas fa-envelope",
-                "color": "is-success",
-                "text": "official@scist.org"
-            },
-            {
-                "url": "https://www.instagram.com/scist.tw/",
-                "icon": "fab fa-instagram",
-                "color": "is-danger",
-                "text": "@scist.tw"
+              "name": "進階資料結構與演算法",
+              "subtopics": [
+                "DP 動態規劃",
+                "Greedy 貪心法",
+                "基礎數論",
+                "基礎圖論、BFS & DFS",
+                "進階資料結構",
+                "RMQ"
+              ]
             }
-        ]
+          ]
+        }
+      ]
+    },
+    "security": {
+      "title": "資訊安全",
+      "svg": ["encryption.svg", "identity.svg", "cloud.svg", "server.svg"],
+      "list": ["PWN", "密碼學", "逆向工程", "網頁安全", "數位鑑識"]
     }
+  },
+  "calendar": {
+    "title": "SCIST 公開日曆"
+  },
+  "clubs": {
+    "title": "參與學校",
+    "all_clubs": {
+      "CY": [
+        {
+          "school": "嘉義高中",
+          "name": "資訊研究社",
+          "social": {
+            "ig": "cysh_irc"
+          },
+          "image": "cycc.jpg"
+        },
+        {
+          "school": "嘉義女中",
+          "name": "資訊研究社",
+          "social": {},
+          "image": "prc.jpg"
+        },
+        {
+          "school": "嘉華高中",
+          "name": "資訊社",
+          "social": {
+            "ig": "frc_8584"
+          },
+          "image": "frc_8584.jpg"
+        },
+        {
+          "school": "永慶高中",
+          "name": "資訊研究社",
+          "social": {},
+          "image": "ycsh.jpg"
+        }
+      ],
+      "TN": [
+        {
+          "school": "臺南一中",
+          "name": "資訊社",
+          "social": {},
+          "image": "tfcis.jpg"
+        },
+        {
+          "school": "臺南女中",
+          "name": "資訊研究社",
+          "social": {},
+          "image": "tgric.jpg"
+        },
+        {
+          "school": "興國高中",
+          "name": "資訊應用社",
+          "social": {},
+          "image": "hkhs.jpg"
+        },
+        {
+          "school": "臺南二中",
+          "name": "資訊研究社",
+          "social": {},
+          "image": "ciss.jpg"
+        },
+        {
+          "school": "南大附中",
+          "name": "資訊研究社",
+          "social": {
+            "ig": "nfirc_2nd"
+          },
+          "image": "nfirc.jpg"
+        },
+        {
+          "school": "黎明中學",
+          "name": "程式設計研究社",
+          "social": {},
+          "image": "lmcps.jpg"
+        },
+        {
+          "school": "成大南工",
+          "name": "資訊社",
+          "social": {},
+          "image": "ptivs.jpg"
+        }
+      ],
+      "KHPT": [
+        {
+          "school": "高雄中學",
+          "name": "程式設計社",
+          "social": {
+            "ig": "kspgc_115th"
+          },
+          "image": "kspgc.jpg"
+        },
+        {
+          "school": "高雄女中",
+          "name": "電腦資訊暨網路科技研究社",
+          "social": {
+            "ig": "kghs_i2trc2"
+          },
+          "image": "i2trc2.jpg"
+        },
+        {
+          "school": "鳳山高中",
+          "name": "電腦資訊社",
+          "social": {
+            "ig": "fssh.cs.club"
+          },
+          "image": "fscs.jpg"
+        },
+        {
+          "school": "新莊高中",
+          "name": "資訊社",
+          "social": {},
+          "image": "hcsh.jpg"
+        },
+        {
+          "school": "鳳新高中",
+          "name": "電腦研究社",
+          "social": {
+            "ig": "fhcrc_115th"
+          },
+          "image": "fhsh.jpg"
+        },
+        {
+          "school": "屏東高中",
+          "name": "資訊研習社",
+          "social": {},
+          "image": "circ.jpg"
+        }
+      ]
+    },
+    "cities_config": [
+      {
+        "abbr": "CY",
+        "name": "嘉義",
+        "animation": "fade-right"
+      },
+      {
+        "abbr": "TN",
+        "name": "臺南",
+        "animation": "fade-up"
+      },
+      {
+        "abbr": "KHPT",
+        "name": "高屏",
+        "animation": "fade-left"
+      }
+    ],
+    "social_config": [
+      {
+        "name": "ig",
+        "color": "is-danger",
+        "icon": "fab fa-instagram-square",
+        "prefix": "https://instagr.am/"
+      },
+      {
+        "name": "site",
+        "color": "is-success",
+        "icon": "fas fa-globe"
+      }
+    ]
+  },
+  "credit": {
+    "coorganizers": {
+      "title": "協辦單位",
+      "organizes": [
+        {
+          "name": "國立臺南第一高級中學",
+          "image": "tnfsh.png"
+        },
+        {
+          "name": "國立成功大學計算機與網路中心",
+          "image": "ncku.png"
+        },
+        {
+          "name": "成大資安社 | B33F 50UP",
+          "image": "beefsoup.png"
+        }
+      ]
+    },
+    "sponsors": {
+      "diamand": {
+        "title": "鑽石級贊助商",
+        "organizes": [
+          {
+            "id": "devcore",
+            "name": "DEVCORE 戴夫寇爾",
+            "image": "devcore.png",
+            "introList": [
+              "DEVCORE 由世界級白帽駭客團隊創立，提供「紅隊演練、滲透測試、顧問服務、教育訓練」等服務，團隊皆以「高道德、高自律、高嚴謹」為執行原則，以業界頂尖的主動式攻擊服務，實質檢測企業的資安防禦，進而強化資安體質",
+              "DEVCORE 讓攻擊先於防禦，協助企業提升資安意識，迎戰與時俱進的攻擊型態"
+            ]
+          },
+          {
+            "id": "ytp",
+            "name": "YTP 少年圖靈計畫",
+            "image": "ytp.png",
+            "introList": [
+              "精誠資訊 SYSTEX Corporation 成立於 1997 年，是台灣資訊服務產業龍頭企業，擁有約 4,200 名員工，位居台灣前一百大服務業，服務超過 30,000 家企業機構客戶，涵蓋兩岸三地、亞洲以及歐美區；代理經銷過 70 項產品，為多家國際級原廠的首要合作夥伴，2021 年合併營收為新台幣 295 億元。",
+              "由精誠資訊主辦的「Young Turing Program 少年圖靈計畫」，以電腦科學之父—艾倫．圖靈（Alan Turing）為名，Young Turing Program 少年圖靈計畫的成立，著眼於發掘年輕的軟體人才，透過程式競賽、專題實做、大學教授指導、企業志工導師輔導、海外參訪學習，啟發台灣學生對程式設計的興趣及熱誠，引導學生運用軟體力解決社會問題，或改善現況，進一步突破跟隨歐美制定標準的框架，勇於創新、創業，為台灣培育優秀軟人才，提升台灣軟體產業的高度，建立台灣的軟體國力。"
+            ]
+          }
+        ]
+      },
+      "plantium": {
+        "title": "白金級贊助商",
+        "organizes": [
+          {
+            "id": "hit",
+            "name": "HIT 台灣駭客協會",
+            "image": "hit.png"
+          }
+        ]
+      },
+      "gold": {
+        "title": "黃金級贊助商",
+        "organizes": [
+          {
+            "id": "csr",
+            "name": "財團法人可成教育基金會",
+            "image": "csr.png"
+          }
+        ]
+      },
+      "specialThanks": {
+        "title": "特別感謝",
+        "organizes": [
+          {
+            "name": "HackMD",
+            "image": "hackmd.png"
+          },
+          {
+            "name": "AIS3 Club",
+            "image": "AIS3_CLUB_logo.png"
+          },
+          {
+            "name": "CNTUG",
+            "image": "CNTUG.png"
+          }
+        ]
+      }
+    }
+  },
+  "link": {
+    "title": "對 SCIST 感興趣嗎？",
+    "subtitle": "關注我們的社群可以獲得更多資訊"
+  },
+  "footer": {
+    "contacts": [
+      {
+        "url": "https://fb.me/scist.tw",
+        "icon": "fab fa-facebook",
+        "color": "is-info",
+        "text": "SCIST"
+      },
+      {
+        "url": "mailto:official@scist.org",
+        "icon": "fas fa-envelope",
+        "color": "is-success",
+        "text": "official@scist.org"
+      },
+      {
+        "url": "https://www.instagram.com/scist.tw/",
+        "icon": "fab fa-instagram",
+        "color": "is-danger",
+        "text": "@scist.tw"
+      }
+    ]
+  }
 }
