@@ -266,7 +266,7 @@
     },
     "sponsors": {
       "diamand": {
-        "title": "鑽石級贊助商",
+        "title": "鑽石級贊助單位",
         "organizes": [
           {
             "id": "devcore",
@@ -289,7 +289,7 @@
         ]
       },
       "plantium": {
-        "title": "白金級贊助商",
+        "title": "白金級贊助單位",
         "organizes": [
           {
             "id": "hit",
@@ -299,7 +299,7 @@
         ]
       },
       "gold": {
-        "title": "黃金級贊助商",
+        "title": "黃金級贊助單位",
         "organizes": [
           {
             "id": "csr",

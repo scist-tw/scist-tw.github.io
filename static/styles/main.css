@@ -4,16 +4,17 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Noto Sans TC", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Noto Sans TC",
+    sans-serif;
 }
 
 h2.title:before {
-  content: '<\a0\a0';
+  content: "<\a0\a0";
   font-size: 1.5rem;
 }
 
 h2.title:after {
-  content: '\a0/>';
+  content: "\a0/>";
   font-size: 1.5rem;
 }
 
@@ -205,7 +206,7 @@ ul {
 }
 
 .pulsing::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 100%;
@@ -245,7 +246,7 @@ ul {
 }
 
 .column-title.middle {
-  border: 2px dashed #0000FF;
+  border: 2px dashed #0000ff;
 }
 
 .subtitle.is-5 {
