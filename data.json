@@ -270,6 +270,7 @@
         "organizes": [
           {
             "id": "devcore",
+            "website": "https://devcore.re",
             "name": "DEVCORE 戴夫寇爾",
             "image": "devcore.png",
             "introList": [
@@ -279,6 +280,7 @@
           },
           {
             "id": "ytp",
+            "website": "https://www.tw-ytp.org/",
             "name": "YTP 少年圖靈計畫",
             "image": "ytp.png",
             "introList": [
@@ -293,6 +295,7 @@
         "organizes": [
           {
             "id": "hit",
+            "website": "https://hacker.org.tw/",
             "name": "HIT 台灣駭客協會",
             "image": "hit.png"
           }
@@ -303,6 +306,7 @@
         "organizes": [
           {
             "id": "csr",
+            "website": "https://www.catcher-group.com/tw/index.aspx",
             "name": "財團法人可成教育基金會",
             "image": "csr.png"
           }

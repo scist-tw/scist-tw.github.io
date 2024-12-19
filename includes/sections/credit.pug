@@ -26,10 +26,11 @@ section#credit.is-medium.is-bold
               .organize-container
                 h3= org.name 
                 figure.image(data-aos="fade-up")
-                  img.org(
-                    src=`static/images/sponsors/${org.image}`
-                    alt=org.name
-                  )
+                  a(href=org.website)
+                    img.org(
+                      src=`static/images/sponsors/${org.image}`
+                      alt=org.name
+                    )
                 p
                   each intro in org.introList 
                     | #{ intro }
