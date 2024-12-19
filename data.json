@@ -270,7 +270,7 @@
         "organizes": [
           {
             "id": "devcore",
-            "website": "https://devcore.re",
+            "website": "https://devco.re",
             "name": "DEVCORE 戴夫寇爾",
             "image": "devcore.png",
             "introList": [
@@ -317,15 +317,13 @@
         "organizes": [
           {
             "name": "HackMD",
+            "website": "https://hackmd.io/",
             "image": "hackmd.png"
           },
           {
             "name": "AIS3 Club",
+            "website": "https://ais3.org/",
             "image": "AIS3_CLUB_logo.png"
-          },
-          {
-            "name": "CNTUG",
-            "image": "CNTUG.png"
           }
         ]
       }

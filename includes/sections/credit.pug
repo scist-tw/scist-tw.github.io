@@ -50,10 +50,11 @@ section#credit.is-medium.is-bold
                   | #{ intro }
                   br
             figure.image(data-aos="fade-up")
-              img.org(
-                src=`static/images/sponsors/${org.image}`
-                alt=org.name
-              )
+              a(href=org.website)
+                img.org(
+                  src=`static/images/sponsors/${org.image}`
+                  alt=org.name
+                )
 
   if sponsors.plantium.organizes.length > 0
     .credit-body
@@ -64,10 +65,11 @@ section#credit.is-medium.is-bold
             .organize-body
               h3= org.name 
               figure.image(data-aos="fade-up")
-                img.org(
-                  src=`static/images/sponsors/${org.image}`
-                  alt=org.name
-                )
+                a(href=org.website)
+                  img.org(
+                    src=`static/images/sponsors/${org.image}`
+                    alt=org.name
+                  )
 
   if sponsors.gold.organizes.length > 0
     .credit-body
@@ -78,10 +80,11 @@ section#credit.is-medium.is-bold
             .organize-body
               h3= org.name 
               figure.image(data-aos="fade-up")
-                img.org(
-                  src=`static/images/sponsors/${org.image}`
-                  alt=org.name
-                )
+                a(href=org.website)
+                  img.org(
+                    src=`static/images/sponsors/${org.image}`
+                    alt=org.name
+                  )
 
   if sponsors.specialThanks.organizes.length > 0
     .credit-body
@@ -92,8 +95,9 @@ section#credit.is-medium.is-bold
             .organize-body
               h3= org.name 
               figure.image(data-aos="fade-up")
-                img.org(
-                  src=`static/images/sponsors/${org.image}`
-                  alt=org.name
-                )
+                a(href=org.website)
+                  img.org(
+                    src=`static/images/sponsors/${org.image}`
+                    alt=org.name
+                  )
 
