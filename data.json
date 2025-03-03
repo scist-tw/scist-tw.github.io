@@ -103,8 +103,8 @@
         },
         {
           "school": "嘉義女中",
-          "name": "資訊研究社",
-          "social": {},
+          "name": "程式研究社",
+          "social": { "ig": "cygsh_irc_11" },
           "image": "prc.jpg"
         },
         {
@@ -118,7 +118,7 @@
         {
           "school": "永慶高中",
           "name": "資訊研究社",
-          "social": {},
+          "social": { "ig": "ycsh_cs_club" },
           "image": "ycsh.jpg"
         }
       ],
@@ -126,13 +126,13 @@
         {
           "school": "臺南一中",
           "name": "資訊社",
-          "social": {},
+          "social": { "ig": "tfcis_at_tnfsh" },
           "image": "tfcis.jpg"
         },
         {
           "school": "臺南女中",
           "name": "資訊研究社",
-          "social": {},
+          "social": { "ig": "tngs_tgirc" },
           "image": "tgric.jpg"
         },
         {
@@ -144,7 +144,7 @@
         {
           "school": "臺南二中",
           "name": "資訊研究社",
-          "social": {},
+          "social": { "ig": "tnssh.ciss_115" },
           "image": "ciss.jpg"
         },
         {
@@ -158,7 +158,7 @@
         {
           "school": "黎明中學",
           "name": "程式設計研究社",
-          "social": {},
+          "social": { "ig": "lmshlmcps7th" },
           "image": "lmcps.jpg"
         },
         {
@@ -195,8 +195,8 @@
         },
         {
           "school": "新莊高中",
-          "name": "資訊社",
-          "social": {},
+          "name": "電腦研究社",
+          "social": { "ig": "crhc_115th" },
           "image": "hcsh.jpg"
         },
         {
@@ -210,7 +210,7 @@
         {
           "school": "屏東高中",
           "name": "資訊研習社",
-          "social": {},
+          "social": { "ig": "pths_circ_115" },
           "image": "circ.jpg"
         }
       ]
