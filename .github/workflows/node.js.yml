@@ -3,7 +3,6 @@ name: Node.js CI and Deploy (Peaceiris)
 on:
   push:
     branches: [src]
-  workflow_dispatch:
 
 jobs:
   build:
@@ -30,7 +29,7 @@ jobs:
       - name: Run npm build
         run: npm run build
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
