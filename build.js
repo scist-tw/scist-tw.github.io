@@ -38,11 +38,9 @@ links.forEach(({ paths, url, title, description }) => {
 </body>
 </html>`;
 
-    // ✅ 新增這段：確保目錄存在
-    const filePath = `${linkPath}.html`;
+    const filePath = path.join("dist", `${linkPath}.html`);
     const dir = path.dirname(filePath);
     fs.mkdirSync(dir, { recursive: true });
-
     fs.writeFileSync(filePath, htmlContent, "utf8");
   });
 });
