@@ -37,7 +37,13 @@ links.forEach(({ paths, url, title, description }) => {
     <p>正在前往 <a href="${url}">${title}</a></p>
 </body>
 </html>`;
-    fs.writeFileSync(`${linkPath}.html`, htmlContent, "utf8");
+
+    // ✅ 新增這段：確保目錄存在
+    const filePath = `${linkPath}.html`;
+    const dir = path.dirname(filePath);
+    fs.mkdirSync(dir, { recursive: true });
+
+    fs.writeFileSync(filePath, htmlContent, "utf8");
   });
 });
 
