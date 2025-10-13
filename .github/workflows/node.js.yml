@@ -1,39 +1,39 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
-name: Node.js CI
+name: Node.js CI and Deploy (Peaceiris)
 
 on:
   push:
-    branches: [ src ]
+    branches: [src]
+  workflow_dispatch:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    - name: Setup node@14
-      uses: actions/setup-node@v1
-      with:
-        node-version: 14
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 21
 
-    - name: Install dependencies for gulp-image-resize
-      run: sudo apt update && sudo apt install imagemagick graphicsmagick
+      - name: Install dependencies for gulp-image-resize
+        run: sudo apt update && sudo apt install -y imagemagick graphicsmagick
 
-    - name: Install package dependencies
-      run: npm ci
+      - name: Install package dependencies
+        run: npm ci
 
-    - name: Build
-      run: npm run build
+      - name: Run build.js
+        run: node build.js
 
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist
-        publish_branch: master
-        cname: scist.org
+      - name: Run npm build
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: master
+          cname: scist.org
